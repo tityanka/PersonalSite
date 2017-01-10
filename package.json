@@ -1,0 +1,29 @@
+{
+  "name": "test_personal-site",
+  "version": "1.0.0",
+  "description": "test_personal-site",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-pug": "latest",
+    "gulp-sass": "latest",
+    "gulp-server-livereload": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uncss": "latest",
+    "gulp-useref": "latest",
+    "pug": "latest",
+    "wiredep": "latest"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "T.Viter",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.full {
+  background-color: #f7931e;
+}
+
+.empty {
+  background-color: transparent;
+  color: #f7931e;
+  border: 1px solid #f7931e;
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+/* Medium Devices, Desktops */
+
+/* Small Devices, Tablets */
+
+/* Extra Small Devices, Phones */
+
+/* Custom, iPhone Retina */
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+
+/* Extra Small Devices, Phones */
+
+/* Small Devices, Tablets */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  /* Large Devices, Wide Screens */
+}
