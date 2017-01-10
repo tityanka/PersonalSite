@@ -41,13 +41,13 @@ body header {
 body header .logo-container {
   color: #fff;
   margin: 0 auto;
+  padding-left: 6em;
 }
 
 body header .logo-container svg {
-  width: 130px;
-  height: 130px;
+  width: 7em;
+  height: 10em;
   float: left;
-  fill: #fff;
 }
 
 body header .logo-container .logo_text {
@@ -112,6 +112,49 @@ body header .top_mnu ul li.dropdown ul.dropdown-menu li a:hover {
 
 body header .top_mnu ul li.active a:focus {
   background-color: #FFF;
+}
+
+body section.s_slider {
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 12em;
+}
+
+body section.s_slider img {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: -100;
+}
+
+body section.s_slider .logo-container {
+  color: #fff;
+  margin: 0 auto;
+  padding-left: 6em;
+}
+
+body section.s_slider .logo-container svg {
+  width: 10em;
+  height: 13em;
+  float: left;
+}
+
+body section.s_slider .logo-container .logo_text {
+  padding-top: 3.5em;
+}
+
+body section.s_slider .logo-container .logo_text h2 {
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  letter-spacing: -3px;
+}
+
+body section.s_slider .logo-container .logo_text span {
+  letter-spacing: -1px;
+  font-size: 1.55em;
 }
 /*==========  Desktop First Method  ==========*/
 
