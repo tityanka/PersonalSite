@@ -1,5 +1,7 @@
 $main_color: #f7931e
 
+=kerning($ls)
+	letter-spacing: $ls+px
 body
 	font-family: 'Open Sans', sans-serif
 	font-weight: normal
@@ -19,7 +21,6 @@ body textarea:required:valid
 .color_element
 	color: $main_color
 a
-	color: $main_color
 	&:link, 
 	&:visited, 
 	&:active, 
@@ -40,3 +41,72 @@ ul
 	background-color: transparent
 	color: $main_color
 	border: 1px solid $main_color
+body
+	header
+		padding-top: 2em
+		.logo-container
+			color: #fff
+			margin: 0 auto
+			svg
+				width: 130px
+				height: 130px
+				float: left
+				fill: #fff
+			.logo_text
+				padding-top: 2em
+				h2
+					line-height: 1em
+					margin: 0
+					padding: 0
+					+kerning(-1)
+				span
+					+kerning(-1)
+					font-size: .9em
+		.tagline
+			color: #fff
+			h3
+				+kerning(-1)
+				font-size: 2.5em
+				line-height: 1.5em
+
+		.top_mnu
+			ul
+				font-weight: 600
+				li
+					a
+						color: #000
+						&:hover
+							background-color: #fff
+						
+				li.dropdown
+					a.dropdown-toggle
+						// background-color: #FFF
+						span
+							padding-left: 1.3em
+					ul.dropdown-menu
+						border: none
+						min-width: 1px
+						width: 100%
+						border-radius: 0
+						text-align: center
+						li
+							a
+								line-height: 2.5em
+								font-weight: 600
+								&:hover
+									color: $main_color
+				li.active
+					a
+						&:focus
+							background-color: #FFF
+				
+
+
+	section.s_slider
+		img
+	
+	section.s_content
+
+
+
+
