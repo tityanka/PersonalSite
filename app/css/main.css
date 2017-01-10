@@ -41,7 +41,7 @@ body header {
 body header .logo-container {
   color: #fff;
   margin: 0 auto;
-  padding-left: 6em;
+  padding-left: 3em;
 }
 
 body header .logo-container svg {
@@ -58,7 +58,7 @@ body header .logo-container .logo_text h2 {
   line-height: 1em;
   margin: 0;
   padding: 0;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 body header .logo-container .logo_text span {
@@ -149,12 +149,97 @@ body section.s_slider .logo-container .logo_text h2 {
   margin: 0;
   padding: 0;
   font-size: 4em;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 
 body section.s_slider .logo-container .logo_text span {
   letter-spacing: -1px;
   font-size: 1.55em;
+}
+
+body section.s_content {
+  margin-top: 3em;
+}
+
+body section.s_content .left_col h1 {
+  color: #666;
+  font-weight: 600;
+  font-size: 4em;
+  letter-spacing: -4px;
+  margin-bottom: 1em;
+}
+
+body section.s_content .left_col img {
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+body section.s_content .right_col blockquote {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 1.2em 3em;
+}
+
+body section.s_content .right_col blockquote::before {
+  content: "\"";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 5em;
+  font-style: italic;
+  line-height: 1;
+}
+
+body section.s_content .right_col blockquote::after {
+  content: "\"";
+  color: #fff;
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  font-size: 5em;
+  font-style: italic;
+  line-height: 1;
+}
+
+body section.s_content .right_col h3 {
+  font-size: 3em;
+  line-height: 1em;
+  color: #666;
+  letter-spacing: -4px;
+  margin-bottom: 1em;
+}
+
+body section.s_content .right_col ul li {
+  margin-bottom: 1em;
+  font-size: .9em;
+}
+
+body section.s_content .listing {
+  margin-top: 2em;
+}
+
+body section.s_content .listing ul {
+  padding-left: 2.5em;
+}
+
+body section.s_content .listing ul li {
+  list-style-type: disc;
+  color: #f7931e;
+}
+
+body section.s_content .listing ul li span {
+  color: #000;
+  font-size: .7em;
+  line-height: 1em;
+}
+
+body section.s_content .listing ol li {
+  font-size: .7em;
+}
+
+body section.s_content .listing ol li span {
+  line-height: 2em;
 }
 /*==========  Desktop First Method  ==========*/
 

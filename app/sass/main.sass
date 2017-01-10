@@ -47,19 +47,18 @@ body
 		.logo-container
 			color: #fff
 			margin: 0 auto
-			padding-left: 6em
+			padding-left: 3em
 			svg
 				width: 7em
 				height: 10em
 				float: left
-				// fill: #fff
 			.logo_text
 				padding-top: 2em
 				h2
 					line-height: 1em
 					margin: 0
 					padding: 0
-					+kerning(-1)
+					+kerning(-2)
 				span
 					+kerning(-1)
 					font-size: .9em
@@ -116,7 +115,7 @@ body
 			color: #fff
 			margin: 0 auto
 			padding-left: 6em
-			
+
 			svg
 				width: 10em
 				height: 13em
@@ -129,13 +128,75 @@ body
 					margin: 0
 					padding: 0
 					font-size: 4em
-					+kerning(-3)
+					+kerning(-4)
 				span
 					+kerning(-1)
 					font-size: 1.55em
 	
 	section.s_content
-		
+		margin-top: 3em
+		.left_col
+			h1
+				color: #666
+				font-weight: 600
+				font-size: 4em
+				+kerning(-4)
+				margin-bottom: 1em
+			img
+				width: 100%
+				margin-bottom: 4em
+		.right_col	
+			blockquote
+				background-color: #f2f2f2
+				border: none
+				padding: 1.2em 3em
+
+				&::before
+					content: "\""
+					color: #fff
+					position: absolute
+					top: 0
+					left: 20px
+					font-size: 5em
+					font-style: italic
+					line-height: 1
+				&::after
+					content: "\""
+					color: #fff
+					position: absolute
+					top: 70px
+					right: 40px
+					font-size: 5em
+					font-style: italic
+					line-height: 1
+			h3
+				font-size: 3em
+				line-height: 1em
+				color: #666
+				+kerning(-4)
+				margin-bottom: 1em
+			ul
+				li
+					margin-bottom: 1em
+					font-size: .9em
+
+
+		.listing
+			margin-top: 2em
+			ul
+				padding-left: 2.5em
+				li
+					list-style-type: disc
+					color: $main_color
+					span
+						color: #000
+						font-size: .7em
+						line-height: 1em
+			ol
+				li
+					font-size: .7em
+					span
+						line-height: 2em
 
 
 
