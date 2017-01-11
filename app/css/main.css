@@ -1,18 +1,29 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   min-width: 320px;
   position: relative;
-  line-height: 1.42857;
+  line-height: 18px;
   -webkit-font-smoothing: antialised;
+  color: #131313;
+}
+
+.colored_element {
+  color: #f7931e;
+}
+
+*:focus {
+  outline: 0;
 }
 
 a:link,
 a:visited,
 a:active,
-a:hover {
+a:hover,
+a:focus {
   text-decoration: none;
+  outline: 0;
 }
 
 ul {
@@ -22,6 +33,28 @@ ul {
 
 ul li {
   list-style-type: none;
+}
+
+h1 {
+  font-size: 5.8em;
+  letter-spacing: -6px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.47em;
+  letter-spacing: -4px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3em;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 2.6em;
+  letter-spacing: -3px;
 }
 
 .full {
@@ -62,8 +95,7 @@ body header .logo-container .logo_text h2 {
 }
 
 body header .logo-container .logo_text span {
-  letter-spacing: -1px;
-  font-size: .9em;
+  font-size: 1.35em;
 }
 
 body header .tagline {
@@ -71,9 +103,9 @@ body header .tagline {
 }
 
 body header .tagline h3 {
-  letter-spacing: -1px;
-  font-size: 2.5em;
+  letter-spacing: -3px;
   line-height: 1.5em;
+  font-weight: 300;
 }
 
 body header .top_mnu ul {
@@ -81,11 +113,17 @@ body header .top_mnu ul {
 }
 
 body header .top_mnu ul li a {
+  border: 1px solid #f7931e;
   color: #000;
+  font-size: 1.13em;
 }
 
 body header .top_mnu ul li a:hover {
   background-color: #fff;
+}
+
+body header .top_mnu ul li.dropdown a.dropdown-toggle {
+  border-color: #f7931e;
 }
 
 body header .top_mnu ul li.dropdown a.dropdown-toggle span {
@@ -104,6 +142,8 @@ body header .top_mnu ul li.dropdown ul.dropdown-menu {
 body header .top_mnu ul li.dropdown ul.dropdown-menu li a {
   line-height: 2.5em;
   font-weight: 600;
+  border: 1px solid #fff;
+  font-size: 1.15em;
 }
 
 body header .top_mnu ul li.dropdown ul.dropdown-menu li a:hover {
@@ -131,7 +171,6 @@ body section.s_slider img {
 body section.s_slider .logo-container {
   color: #fff;
   margin: 0 auto;
-  padding-left: 6em;
 }
 
 body section.s_slider .logo-container svg {
@@ -144,43 +183,40 @@ body section.s_slider .logo-container .logo_text {
   padding-top: 3.5em;
 }
 
-body section.s_slider .logo-container .logo_text h2 {
+body section.s_slider .logo-container .logo_text h1 {
   line-height: 1em;
   margin: 0;
   padding: 0;
-  font-size: 4em;
-  letter-spacing: -4px;
 }
 
 body section.s_slider .logo-container .logo_text span {
-  letter-spacing: -1px;
   font-size: 1.55em;
 }
 
-body section.s_content {
+body section.s_content .first_row {
   margin-top: 3em;
 }
 
-body section.s_content .left_col h1 {
+body section.s_content .first_row .left_col h1 {
   color: #666;
-  font-weight: 600;
-  font-size: 4em;
-  letter-spacing: -4px;
   margin-bottom: 1em;
 }
 
-body section.s_content .left_col img {
+body section.s_content .first_row .left_col img {
   width: 100%;
   margin-bottom: 4em;
 }
 
-body section.s_content .right_col blockquote {
+body section.s_content .first_row .right_col blockquote {
   background-color: #f2f2f2;
   border: none;
   padding: 1.2em 3em;
+  font-size: 1.33em;
+  font-weight: 300;
+  font-style: italic;
 }
 
-body section.s_content .right_col blockquote::before {
+body section.s_content .first_row .right_col blockquote::before {
   content: "\"";
   color: #fff;
   position: absolute;
@@ -191,7 +227,7 @@ body section.s_content .right_col blockquote::before {
   line-height: 1;
 }
 
-body section.s_content .right_col blockquote::after {
+body section.s_content .first_row .right_col blockquote::after {
   content: "\"";
   color: #fff;
   position: absolute;
@@ -199,47 +235,104 @@ body section.s_content .right_col blockquote::after {
   right: 40px;
   font-size: 5em;
   font-style: italic;
-  line-height: 1;
+  line-height: 0.8;
 }
 
-body section.s_content .right_col h3 {
-  font-size: 3em;
+body section.s_content .first_row .right_col h2 {
   line-height: 1em;
   color: #666;
-  letter-spacing: -4px;
+  margin-bottom: 1.33em;
+}
+
+body section.s_content .first_row .right_col ul li {
   margin-bottom: 1em;
 }
 
-body section.s_content .right_col ul li {
-  margin-bottom: 1em;
+body section.s_content .second_row {
+  margin: 2.5em 0;
+  font-style: italic;
+}
+
+body section.s_content .second_row ul {
+  padding-left: 3.2em;
+}
+
+body section.s_content .second_row ul li {
+  list-style-type: disc;
+  color: #f7931e;
   font-size: .9em;
 }
 
-body section.s_content .listing {
-  margin-top: 2em;
-}
-
-body section.s_content .listing ul {
-  padding-left: 2.5em;
-}
-
-body section.s_content .listing ul li {
-  list-style-type: disc;
-  color: #f7931e;
-}
-
-body section.s_content .listing ul li span {
+body section.s_content .second_row ul li span {
   color: #000;
-  font-size: .7em;
+}
+
+body section.s_content .second_row ol li {
+  font-size: .9em;
+}
+
+body section.s_content .third_row .third_row_content h4 {
+  font-weight: 700;
   line-height: 1em;
+  color: #666;
+  margin-bottom: 1em;
 }
 
-body section.s_content .listing ol li {
-  font-size: .7em;
+body section.s_content .third_row .third_row_content ul li {
+  margin-bottom: 1em;
 }
 
-body section.s_content .listing ol li span {
-  line-height: 2em;
+body section.s_content .third_row .third_row_form {
+  margin: 0;
+  padding: 0;
+}
+
+body section.s_content .third_row .third_row_form form {
+  border: 0.21px solid #b3b3b3;
+  -webkit-box-shadow: 0 4px 15px 0 #999;
+  box-shadow: 0 4px 15px 0 #999;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+body section.s_content .third_row .third_row_form form label {
+  margin: 0;
+}
+
+body section.s_content .third_row .third_row_form form label h4 {
+  font-size: 2.2em;
+  color: #666;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+body section.s_content .third_row .third_row_form form input {
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  width: 80%;
+  line-height: 2.5em;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em auto;
+  letter-spacing: -1px;
+}
+
+body section.s_content .third_row .third_row_form form button {
+  border: none;
+  line-height: 2.5em;
+  font-size: 1.3em;
+  letter-spacing: 0px;
+  text-align: center;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  color: #fff;
+  width: 35%;
+}
+
+body section.s_banners {
+  margin-top: 3em;
 }
 /*==========  Desktop First Method  ==========*/
 

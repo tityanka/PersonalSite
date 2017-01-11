@@ -2,14 +2,16 @@ $main_color: #f7931e
 
 =kerning($ls)
 	letter-spacing: $ls+px
+
 body
 	font-family: 'Open Sans', sans-serif
 	font-weight: normal
-	font-size: 14px
+	font-size: 15px
 	min-width: 320px
 	position: relative
-	line-height: 1.42857
+	line-height: 18px
 	-webkit-font-smoothing: antialised
+	color: #131313
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -18,20 +20,40 @@ body input:required:valid,
 body textarea:required:valid
 	color: green
 
-.color_element
+.colored_element
 	color: $main_color
+*
+	&:focus
+		outline: 0
 a
 	&:link, 
 	&:visited, 
 	&:active, 
-	&:hover
+	&:hover,
+	&:focus
 		text-decoration: none
+		outline: 0
 
 ul
 	padding: 0
 	margin: 0
 	li
 		list-style-type: none
+h1
+	font-size: 5.8em
+	+kerning(-6)
+	font-weight: 700
+h2
+	font-size: 3.47em
+	+kerning(-4)
+	font-weight: 700
+
+h3
+	font-size: 3em
+	+kerning(-1)
+h4
+	font-size: 2.6em
+	+kerning(-3)
 
 .hidden
 	display: none
@@ -60,27 +82,30 @@ body
 					padding: 0
 					+kerning(-2)
 				span
-					+kerning(-1)
-					font-size: .9em
+					// +kerning(-1)
+					font-size: 1.35em
 		.tagline
 			color: #fff
 			h3
-				+kerning(-1)
-				font-size: 2.5em
+				+kerning(-3)
+				// font-size: 2.5em
 				line-height: 1.5em
+				font-weight: 300
 
 		.top_mnu
 			ul
 				font-weight: 600
 				li
 					a
+						border: 1px solid $main_color
 						color: #000
+						font-size: 1.13em
 						&:hover
 							background-color: #fff
 						
 				li.dropdown
 					a.dropdown-toggle
-						// background-color: #FFF
+						border-color: $main_color
 						span
 							padding-left: 1.3em
 					ul.dropdown-menu
@@ -93,6 +118,8 @@ body
 							a
 								line-height: 2.5em
 								font-weight: 600
+								border: 1px solid #fff
+								font-size: 1.15em
 								&:hover
 									color: $main_color
 				li.active
@@ -114,7 +141,7 @@ body
 		.logo-container
 			color: #fff
 			margin: 0 auto
-			padding-left: 6em
+			// padding-left: 6em
 
 			svg
 				width: 10em
@@ -123,80 +150,133 @@ body
 				// fill: #fff
 			.logo_text
 				padding-top: 3.5em
-				h2
+				h1
 					line-height: 1em
 					margin: 0
 					padding: 0
-					font-size: 4em
-					+kerning(-4)
+					// font-size: 4em
+					// +kerning(-4)
 				span
-					+kerning(-1)
+					// +kerning(-1)
 					font-size: 1.55em
 	
 	section.s_content
-		margin-top: 3em
-		.left_col
-			h1
-				color: #666
-				font-weight: 600
-				font-size: 4em
-				+kerning(-4)
-				margin-bottom: 1em
-			img
-				width: 100%
-				margin-bottom: 4em
-		.right_col	
-			blockquote
-				background-color: #f2f2f2
-				border: none
-				padding: 1.2em 3em
-
-				&::before
-					content: "\""
-					color: #fff
-					position: absolute
-					top: 0
-					left: 20px
-					font-size: 5em
-					font-style: italic
-					line-height: 1
-				&::after
-					content: "\""
-					color: #fff
-					position: absolute
-					top: 70px
-					right: 40px
-					font-size: 5em
-					font-style: italic
-					line-height: 1
-			h3
-				font-size: 3em
-				line-height: 1em
-				color: #666
-				+kerning(-4)
-				margin-bottom: 1em
-			ul
-				li
+		.first_row
+			margin-top: 3em
+			.left_col
+				h1
+					color: #666
+					// font-weight: 600
+					// font-size: 4em
+					// +kerning(-4)
 					margin-bottom: 1em
-					font-size: .9em
+				img
+					width: 100%
+					margin-bottom: 4em
+			.right_col	
+				blockquote
+					background-color: #f2f2f2
+					border: none
+					padding: 1.2em 3em
+					font-size: 1.33em
+					font-weight: 300
+					font-style: italic
 
+					&::before
+						content: "\""
+						color: #fff
+						position: absolute
+						top: 0
+						left: 20px
+						font-size: 5em
+						font-style: italic
+						line-height: 1
+					&::after
+						content: "\""
+						color: #fff
+						position: absolute
+						top: 70px
+						right: 40px
+						font-size: 5em
+						font-style: italic
+						line-height: 0.8
+				h2
+					// font-size: 3em
+					line-height: 1em
+					color: #666
+					// +kerning(-4)
+					margin-bottom: 1.33em
+				ul
+					li
+						margin-bottom: 1em
+						// font-size: .9em
+		.second_row
+			// margin-top: 2em
+			margin: 2.5em 0
+			font-style: italic
 
-		.listing
-			margin-top: 2em
 			ul
-				padding-left: 2.5em
+				padding-left: 3.2em
 				li
 					list-style-type: disc
 					color: $main_color
+					font-size: .9em
 					span
 						color: #000
-						font-size: .7em
-						line-height: 1em
+						// line-height: 1em
 			ol
 				li
-					font-size: .7em
-					span
-						line-height: 2em
+					font-size: .9em
+					
+
+		.third_row
+			.third_row_content
+				// padding-left: 3em
+				h4
+					font-weight: 700
+					line-height: 1em
+					color: #666
+					margin-bottom: 1em
+				ul
+					li
+						margin-bottom: 1em
+			.third_row_form
+				margin: 0
+				padding: 0
+				form
+					border: 0.21px solid #b3b3b3
+					box-shadow: 0 4px 15px 0 #999
+					text-align: center
+					padding: 1em
+					width: 100%
+					label
+						margin: 0
+						h4
+							font-size: 2.2em
+							color: #666
+							+kerning(0)
+							font-weight: 700
+					input
+						border: 1px solid #f2f2f2
+						border-radius: 2em
+						width: 80%
+						line-height: 2.5em
+						font-size: 1.5em
+						text-align: center
+						margin: 1em auto
+						+kerning(-1)
+					button
+						border: none
+						line-height: 2.5em
+						font-size: 1.3em
+						+kerning(0)
+						text-align: center
+						border-radius: 2em
+						color: #fff
+						width: 35%
+	section.s_banners
+		margin-top: 3em
+
 
 
 
