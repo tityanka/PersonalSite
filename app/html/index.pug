@@ -32,28 +32,57 @@ html(lang='ru')
 						h3 Собственный сайт: лицо успешной компании
 			.container
 				.row
-					.col-md-8.col-md-offset-4
-						.top_mnu
-							ul.nav.navbar-nav.text-uppercase
-								li.active
-									a(href="#") Главная
-								li.dropdown
-									a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
-										| О компании 
-										span.glyphicon.glyphicon-menu-down
-									ul.dropdown-menu
-										li
-											a(href="#") Компания
-										li
-											a(href="#") Новости
-										li
-											a(href="#") Статьи
-								li
-									a(href="#") Услуги
-								li
-									a(href="#") Портфолио
-								li
-									a(href="#") Контакты
+					.col-md-8.col-md-offset-4.main_mnu
+						//- nav.top_mnu
+						//- 	ul.nav.navbar-nav.text-uppercase
+						//- 		li.active
+						//- 			a(href="#") Главная
+						//- 		li.dropdown
+						//- 			a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+						//- 				| О компании 
+						//- 				span.glyphicon.glyphicon-menu-down
+						//- 			ul.dropdown-menu
+						//- 				li
+						//- 					a(href="#") Компания
+						//- 				li
+						//- 					a(href="#") Новости
+						//- 				li
+						//- 					a(href="#") Статьи
+						//- 		li
+						//- 			a(href="#") Услуги
+						//- 		li
+						//- 			a(href="#") Портфолио
+						//- 		li
+						//- 			a(href="#") Контакты
+						nav.navbar.navbar-default
+							.container-fluid
+								button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main_mnu', aria-expanded='false')
+									span.icon-bar
+									span.icon-bar
+									span.icon-bar
+								#main_mnu.collapse.navbar-collapse
+									nav.top_mnu
+										ul.nav.navbar-nav.text-uppercase
+											li.active
+												a(href='#') Главная
+											li.dropdown
+												a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+													| О компании 
+													span.glyphicon.glyphicon-menu-down
+												ul.dropdown-menu
+													li
+														a(href='#') Компания
+													li
+														a(href='#') Новости
+													li
+														a(href='#') Статьи
+											li
+												a(href='#') Услуги
+											li
+												a(href='#') Портфолио
+											li
+												a(href='#') Контакты
+
 		section.s_slider
 			img(src="img/rocket-004.jpg", alt="rocket-004.jpg")
 			.container
@@ -73,7 +102,7 @@ html(lang='ru')
 				.row.first_row
 					.col-md-6.left_col
 						h1 PersonalSite
-						img.img-responsive(src="img/rocket-004.jpg", alt="")
+						img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 						
 					.col-md-6.right_col
 						blockquote
@@ -129,7 +158,7 @@ html(lang='ru')
 						.media
 							.item_row
 								.media-left
-									img(src="img/rocket-004.jpg", alt="").media-object
+									img(src="img/rocket-thumb.jpg", alt="").media-object
 								.media-body
 									.item_descr_head
 										ul.list-inline
@@ -152,7 +181,7 @@ html(lang='ru')
 						.media
 							.item_row
 								.media-left
-									img.media-object(src="img/rocket-004.jpg", alt="")
+									img.media-object(src="img/rocket-thumb.jpg", alt="")
 								.media-body
 									.item_descr_head
 										ul.list-inline
@@ -171,7 +200,7 @@ html(lang='ru')
 					.news_item.half.full_img.col-md-6
 						.item_row
 							//- .item_image
-								//- img.img-responsive(src="img/rocket-004.jpg", alt="")
+								//- img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 							.item_description
 								.item_descr_head
 									ul.list-inline
@@ -192,7 +221,7 @@ html(lang='ru')
 						.media
 							.item.full
 								.media-left
-									img(src="img/rocket-004.jpg", alt="" ).media-object
+									img(src="img/rocket-thumb.jpg", alt="" ).media-object
 								.media-body
 									h5 Собственный сайт: лицо успешной компании
 									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
@@ -200,7 +229,7 @@ html(lang='ru')
 						.media
 							.item
 								.media-left
-									img(src="img/rocket-004.jpg", alt="").media-object
+									img(src="img/rocket-thumb.jpg", alt="").media-object
 								.media-body
 									.item_descr_body
 										h5 Собственный сайт: лицо успешной компании
@@ -220,7 +249,7 @@ html(lang='ru')
 					.news_item.vertical.col-md-3.col-xs-12
 						.item_row
 							.item_image
-								img.img-responsive(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 							.item_description
 								.item_descr_head
 									ul.list-inline
@@ -239,7 +268,7 @@ html(lang='ru')
 					.news_item.vertical.col-md-3.col-xs-12
 						.item_row
 							.item_image
-								img.img-responsive(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 							.item_description
 								.item_descr_head
 									ul.list-inline
@@ -257,7 +286,7 @@ html(lang='ru')
 					.news_item.vertical.col-md-3.col-xs-12
 						.item_row
 							.item_image
-								img.img-responsive(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 							.item_description
 								.item_descr_head
 									ul.list-inline
@@ -270,7 +299,7 @@ html(lang='ru')
 					.news_item.vertical.col-md-3.col-xs-12
 						.item_row
 							.item_image
-								img.img-responsive(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 							.item_description
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
@@ -430,7 +459,7 @@ html(lang='ru')
 		footer.full
 			.container-fluid
 				.row
-					.logo-container.col-md-4
+					.logo-container.col-md-4.col-xs-12
 						svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 							defs
 							title logo_rocket
@@ -440,7 +469,7 @@ html(lang='ru')
 							h2 PersonalSite
 							span лицо успешной компании
 					
-					.bottom_mnu.col-md-8
+					.bottom_mnu.col-md-8.hidden-xs
 						ul.nav.navbar-nav.text-uppercase
 							li.active
 								a(href="#") Главная

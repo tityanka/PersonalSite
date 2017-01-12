@@ -130,29 +130,52 @@ body header .tagline h3 {
   font-weight: 300;
 }
 
-body header .top_mnu ul {
+body header .main_mnu nav.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+body header .main_mnu nav.navbar.navbar-default button.navbar-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body header .main_mnu nav.navbar.navbar-default button.navbar-toggle span.icon-bar {
+  background-color: #FFF;
+  width: 2em;
+  margin-bottom: .5em;
+}
+
+body header .main_mnu nav.navbar.navbar-default button.navbar-toggle:hover,
+body header .main_mnu nav.navbar.navbar-default button.navbar-toggle:focus {
+  border: none;
+  background-color: transparent;
+}
+
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav {
   font-weight: 600;
 }
 
-body header .top_mnu ul li a {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li a {
   border: 1px solid #f7931e;
   color: #000;
   font-size: 1.13em;
 }
 
-body header .top_mnu ul li a:hover {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li a:hover {
   background-color: #fff;
 }
 
-body header .top_mnu ul li.dropdown a.dropdown-toggle {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.dropdown a.dropdown-toggle {
   border-color: #f7931e;
 }
 
-body header .top_mnu ul li.dropdown a.dropdown-toggle span {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.dropdown a.dropdown-toggle span {
   padding-left: 1.3em;
 }
 
-body header .top_mnu ul li.dropdown ul.dropdown-menu {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.dropdown ul.dropdown-menu {
   border: none;
   min-width: 1px;
   width: 100%;
@@ -161,19 +184,24 @@ body header .top_mnu ul li.dropdown ul.dropdown-menu {
   text-align: center;
 }
 
-body header .top_mnu ul li.dropdown ul.dropdown-menu li a {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.dropdown ul.dropdown-menu li a {
   line-height: 2.5em;
   font-weight: 600;
   border: 1px solid #fff;
   font-size: 1.15em;
 }
 
-body header .top_mnu ul li.dropdown ul.dropdown-menu li a:hover {
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.dropdown ul.dropdown-menu li a:hover {
   color: #f7931e;
 }
 
-body header .top_mnu ul li.active a:focus {
-  background-color: #FFF;
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.active a {
+  background-color: #fff;
+}
+
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.active a:hover,
+body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collapse nav.top_mnu ul.nav.navbar-nav li.active a:focus {
+  background-color: #fff;
 }
 
 body section.s_slider {
