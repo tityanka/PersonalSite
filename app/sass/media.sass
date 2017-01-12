@@ -69,13 +69,17 @@
 			.tagline
 				h3
 					// +kerning(-1)
-			.top_mnu
-				ul
-					li.dropdown
-						ul.dropdown-menu
-							li
-								a
-									font-size: 1em
+			.main_mnu
+				nav.navbar.navbar-default
+					#main_mnu.collapse.navbar-collapse
+						nav.top_mnu
+							ul.nav.navbar-nav
+								li.dropdown
+									ul.dropdown-menu
+										li
+											a
+												font-size: 1em
+												text-align: left
 		section.s_slider
 			min-height: 1px
 			// overflow: visible
