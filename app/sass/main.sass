@@ -63,18 +63,6 @@ h5
 	// font-size: 1.87em
 	font-size: 28px
 
-
-button
-	border: none
-	line-height: 2em
-	font-size: 1.3em
-	+kerning(0)
-	text-align: center
-	border-radius: 2em
-	color: #fff
-	margin-bottom: 1em
-	padding: 0 3em
-
 .hidden
 	display: none
 .full
@@ -85,6 +73,29 @@ button
 	border: 1px solid $main_color
 .grey
 	background-color: #e6e6e6
+
+button
+	border: 1px solid $main_color
+	line-height: 2em
+	font-size: 1.3em
+	+kerning(0)
+	text-align: center
+	border-radius: 2em
+	color: #fff
+	margin-bottom: 1em
+	padding: 0 3em
+	background-color: $main_color
+	&:hover
+		background-color: #fff
+		color: $main_color
+		// border: 1px solid $main_color
+	&.empty
+		&:hover
+			background-color: $main_color
+			color: #fff
+			border: 1px solid #fff
+
+
 body
 	header
 		padding-top: 2em
