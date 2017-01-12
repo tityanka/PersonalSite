@@ -1,5 +1,5 @@
 $main_color: #f7931e
-
+$font_color: #131313
 =kerning($ls)
 	letter-spacing: $ls+px
 
@@ -9,9 +9,9 @@ body
 	font-size: 15px
 	min-width: 320px
 	position: relative
-	line-height: 18px
+	line-height: 1.2em
 	-webkit-font-smoothing: antialised
-	color: #131313
+	color: $font_color
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -40,20 +40,40 @@ ul
 	li
 		list-style-type: none
 h1
-	font-size: 5.8em
+	// font-size: 5.8em
+	font-size: 87px
 	+kerning(-6)
 	font-weight: 700
 h2
-	font-size: 3.47em
+	// font-size: 3.47em
+	font-size: 52px
 	+kerning(-4)
 	font-weight: 700
 
 h3
-	font-size: 3em
+	// font-size: 3em
+	font-size: 45px
 	+kerning(-1)
 h4
-	font-size: 2.6em
+	// font-size: 2.6em
+	font-size: 39px
 	+kerning(-3)
+
+h5
+	// font-size: 1.87em
+	font-size: 28px
+
+
+button
+	border: none
+	line-height: 2em
+	font-size: 1.3em
+	+kerning(0)
+	text-align: center
+	border-radius: 2em
+	color: #fff
+	margin-bottom: 1em
+	padding: 0 3em
 
 .hidden
 	display: none
@@ -264,24 +284,213 @@ body
 					input
 						border: 1px solid #f2f2f2
 						border-radius: 2em
-						line-height: 3em
+						line-height: 2em
 						font-size: 1.5em
 						text-align: center
 						margin: 1em auto
 						+kerning(-1)
 					button
-						border: none
-						line-height: 3em
-						font-size: 1.3em
-						+kerning(0)
-						text-align: center
-						border-radius: 2em
-						color: #fff
-						margin-bottom: 1em
-						padding: 0 3em
+						// border: none
+						// line-height: 2em
+						// font-size: 1.3em
+						// +kerning(0)
+						// text-align: center
+						// border-radius: 2em
+						// color: #fff
+						// margin-bottom: 1em
+						// padding: 0 3em
 	section.s_banners
 		margin-top: 3em
+		.news_item
+			padding: 0
+			.media
+				.item_row
+					border: 1px solid #b3b3b3
+					margin: .5em
+					.media-left
+						img.media-object
+							padding: 0
+					.media-body
+						padding: .8em
+						.item_descr_head
+							ul
+								li
+									&:nth-child(1)
+										font-weight: 700
+										margin-right: 1em
+									&:nth-child(2)
+										font-weight: 400
+										font-size: 1.1em
+										line-height: 1.2em
+										background-color: #e6e6e6
+										padding: .3em .5em
+						.item_descr_body
+							h5
+								font-weight: 600
+							ul
+								li
+						.item_descr_footer
+							button
+								float: left
+							ul
+								li
+									line-height: 2.3em
+									font-weight: 700
+									&:last-child
+										color: $main_color
+			&.large
+				.media
+					.item_row
+						.media-left
+							img.media-object
+								width: 350px
+								height: 350px
+						.media-body
+							padding-right: 2em
+							.item_descr_body
+								h5
+									padding: .5em 0
+								ul
+									li
+										padding: .5em 0
+							.item_descr_footer
+								margin-top: 2em
+			&.half
+				.media
+					.item_row
+						.media-left
+							img.media-object
+								width: 180px
+								height: 350px
+						.media-body
+							// padding: .8em
+							.item_descr_head
+							.item_descr_body
+								h5
+									font-size: 1.6em
+									padding: .5em 0
+						button
+							margin-top: .5em
+				&.full_img
+					padding: .5em
+					.item_row
+						background-image: url("../img/rocket-004.jpg")
+						background-size: cover
+						position: relative
+						min-height: 350px
+						.item_description
+							position: absolute
+							padding: 2em
+							bottom: 0
+							left: 0
+							z-index: 999
+							color: #fff
+							.item_descr_head
+								ul
+									li
+										&:nth-child(1)
+											font-weight: 700
+											margin-right: 1em
+										&:nth-child(2)
+											font-weight: 400
+											font-size: 1.1em
+											line-height: 1.2em
+											background-color: #e6e6e6
+											padding: .3em .5em
+											color: $font_color
+							.item_descr_footer
+								ul
+									li
+										line-height: 2.3em
+										font-weight: 700
+										&:last-child
+											color: $main_color
+					button
+						margin-top: .5em
+			
+			&.vertical
+				margin-top: 3em
+				.item_row
+					border: 1px solid #b3b3b3
+					margin: .5em
+					.item_description
+						padding: 1em
+						.item_descr_head
+							ul
+								li
+									&:nth-child(1)
+										font-weight: 700
+										margin-right: 1em
+										font-size: .9em
+									&:nth-child(2)
+										font-weight: 400
+										font-size: 1em
+										line-height: 1.2em
+										background-color: #e6e6e6
+										padding: .3em .5em
+						.item_descr_body
+							h5
+								font-weight: 600
+								font-size: 1.67em
+						.item_descr_footer
+							button
+								width: 95%
+								padding: 0
+								text-align: center
+								margin-top: 1em
+							ul
+								li
+									// line-height: 2.3em
+									font-weight: 700
+									&:last-child
+										color: $main_color
 
 
 
 
+
+
+
+
+
+		.media
+			width: 100%
+			.item
+				border: 1px solid #b3b3b3
+				margin: .5em
+				.media-left
+					margin: 0
+					padding: 0
+					img.media-object
+						margin: 0
+						padding: 0
+						width: 180px
+						height: 200px
+				.media-body
+					padding: .8em
+					h5
+						font-size: 1.37em
+					p
+						font-size: .82em
+						margin-top: 2em
+					.item_descr_body
+						ul
+							li
+								font-size: .66em
+								&:nth-child(1)
+									font-weight: 700
+									margin-right: 1em
+								&:nth-child(2)
+									font-weight: 400
+									font-size: .73em
+									line-height: 1.2em
+									background-color: #e6e6e6
+									padding: .3em .5em
+						p
+							margin-top: 0
+					.item_descr_footer
+						ul
+							li
+								font-size: .87em
+								&:last-child
+									color: $main_color

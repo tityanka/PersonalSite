@@ -73,7 +73,7 @@ html(lang='en')
 				.row.first_row
 					.col-md-6.left_col
 						h1 PersonalSite
-						img(src="img/rocket-004.jpg", alt="")
+						img.img-responsive(src="img/rocket-004.jpg", alt="")
 						
 					.col-md-6.right_col
 						blockquote
@@ -126,96 +126,107 @@ html(lang='en')
 		section.s_banners
 			.container
 				.row
-					.col-md-12
-						.news_item_large
-							.item_image
-								img(src="img/rocket-004.jpg", alt="")
-							.item_description
-								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
-								.item_descr_body
-									h5 Собственный сайт: лицо успешной компании
-									ul.list-unstyled
-										li Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
-										li Можно ли успешно продавать свои услуги без сайта компании? 
-								.item_descr_footer
-									button.full Подробнее
-									ul.list-inline
-										li Сайт
-										li Компания
-										li Услуги
-										li Теги
+					.news_item.large.col-md-12
+						.media
+							.item_row
+								.media-left
+									img(src="img/rocket-004.jpg", alt="").media-object
+								.media-body
+									.item_descr_head
+										ul.list-inline
+											li 2017.11.12
+											li Название раздела
+									.item_descr_body
+										h5 Собственный сайт: лицо успешной компании
+										ul.list-unstyled
+											li Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
+											li Можно ли успешно продавать свои услуги без сайта компании? 
+									.item_descr_footer
+										button.full Подробнее
+										ul.list-inline.text-right
+											li Сайт
+											li Компания
+											li Услуги
+											li Теги
 				.row
-					.col-md-6
-						.news_item_half
-							.item_image
-								img(src="img/rocket-004.jpg", alt="")
+					.news_item.half.col-md-6
+						.media
+							.item_row
+								.media-left
+									img.media-object(src="img/rocket-004.jpg", alt="")
+								.media-body
+									.item_descr_head
+										ul.list-inline
+											li 2017.11.12
+											li Название раздела
+									.item_descr_body
+										h5 Собственный сайт: лицо успешной компании
+										p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
+									.item_descr_footer
+										ul.list-inline.text-center
+											li Компания
+											li Услуги
+											li Теги
+								button.full.pull-right Показать еще
+					
+					.news_item.half.full_img.col-md-6
+						.item_row
+							//- .item_image
+								//- img.img-responsive(src="img/rocket-004.jpg", alt="")
 							.item_description
 								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
-								.item_descr_body
-									h5 Собственный сайт: лицо успешной компании
-									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
-								.item_descr_footer
 									ul.list-inline
-										li Компания
-										li Услуги
-										li Теги
-						button.full Показать еще
-					.col-md-6
-						.news_item_half_full_img
-							.item_image
-								img(src="img/rocket-004.jpg", alt="")
-							.item_description
-								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
+										li 2017.11.12
+										li Название раздела
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
 								.item_descr_footer
-									ul.list-inline
+									ul.list-inline.text-right
 										li Сайт
 										li Компания
 										li Услуги
 										li Теги
 						button.empty Показать еще
+				
 				.row
-					.col-md-6
-						.news_item_half_small_colored
-							.item_image
-								img(src="img/rocket-004.jpg", alt="")
-							.item_description.full
-								.item_descr_body
+					.col-md-6.news_item.half
+						.media
+							.item
+								.media-left
+									img(src="img/rocket-004.jpg", alt="" ).media-object
+								.media-body.full
 									h5 Собственный сайт: лицо успешной компании
 									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
-					.col-md-6
-						.news_item_half_small
-							.item_image
-								img(src="img/rocket-004.jpg", alt="")
-							.item_description.full
-								.item_descr_head
-									h5 Собственный сайт: лицо успешной компании
-								.item_descr_body
-									span.date 2017.11.12
-									span Название раздела
-									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 		
-								.item_descr_footer
-									ul.list-inline
-										li Сайт
-										li Компания
-										li Услуги
-										li Теги
+					.col-md-6.news_item.half
+						.media
+							.item
+								.media-left
+									img(src="img/rocket-004.jpg", alt="").media-object
+								.media-body
+									.item_descr_body
+										h5 Собственный сайт: лицо успешной компании
+										ul.list-inline
+											li 2017.11.12
+											li Название раздела
+										p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть?
+									.item_descr_footer
+										ul.list-inline.text-right
+											li Сайт
+											li Компания
+											li Услуги
+											li Теги
+
+									
 				.row
-					.col-md-3
-						.news_item_vertical_1
+					.news_item.vertical.col-md-3.col-xs-12
+						.item_row
 							.item_image
-								img(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-004.jpg", alt="")
 							.item_description
 								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
+									ul.list-inline
+										li 2017.11.12
+										li Название раздела
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
 									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
@@ -225,14 +236,16 @@ html(lang='en')
 										li Компания
 										li Услуги
 										li Теги
-					.col-md-3
-						.news_item_vertical_2
+				
+					.news_item.vertical.col-md-3.col-xs-12
+						.item_row
 							.item_image
-								img(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-004.jpg", alt="")
 							.item_description
 								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
+									ul.list-inline
+										li 2017.11.12
+										li Название раздела
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
 									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
@@ -241,34 +254,38 @@ html(lang='en')
 										li Компания
 										li Услуги
 										li Теги
-					.col-md-3
-						.news_item_vertical_3
+				
+					.news_item.vertical.col-md-3.col-xs-12
+						.item_row
 							.item_image
-								img(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-004.jpg", alt="")
 							.item_description
 								.item_descr_head
-									span.date 2017.11.12
-									span Название раздела
+									ul.list-inline
+										li 2017.11.12
+										li Название раздела
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
-									
-					.col-md-3
-						.news_item_vertical_4
+								
+				
+					.news_item.vertical.col-md-3.col-xs-12
+						.item_row
 							.item_image
-								img(src="img/rocket-004.jpg", alt="")
+								img.img-responsive(src="img/rocket-004.jpg", alt="")
 							.item_description
 								.item_descr_body
 									h5 Собственный сайт: лицо успешной компании
 									p Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? 
 								
-				.row
+				.row.text-center(style="margin: 2em;")
 					button.full Пагинация
-
+		section.s_banner_svg
+			.container
 				.row
 					.col-md-12
 						.banner_item_large.full
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -285,7 +302,7 @@ html(lang='en')
 					.col-md-12
 						.banner_item_large
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -303,7 +320,7 @@ html(lang='en')
 					.col-md-6
 						.banner_item_half_colored.full
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -319,7 +336,7 @@ html(lang='en')
 					.col-md-6
 						.banner_item_half_grey
 							.item_image.left
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -335,7 +352,7 @@ html(lang='en')
 					.col-md-6
 						.banner_item_half_small_colored.full
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -348,7 +365,7 @@ html(lang='en')
 					.col-md-6
 						.banner_item_half_small_grey
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -363,7 +380,7 @@ html(lang='en')
 					.col-md-3
 						.banner_item_vertical_1.full
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -378,7 +395,7 @@ html(lang='en')
 					.col-md-3
 						.banner_item_vertical_2
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -392,7 +409,7 @@ html(lang='en')
 					.col-md-3
 						.banner_item_vertical_3
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -406,7 +423,7 @@ html(lang='en')
 					.col-md-3
 						.banner_item_vertical_4
 							.item_image
-								svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+								svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 									defs
 										style.
 											.a{fill:#000;}
@@ -421,7 +438,7 @@ html(lang='en')
 			.container-fluid
 				.row
 					.logo-container.col-md-4
-						svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
+						svg.img-responsive(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 125.35 244.87')
 							defs
 								style.
 									.a{fill:#000;}
