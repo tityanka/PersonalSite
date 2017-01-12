@@ -5199,14 +5199,7 @@ a.thumbnail.active {
 .media:first-child {
   margin-top: 0;
 }
-.media,
-.media-body {
-  overflow: hidden;
-  zoom: 1;
-}
-.media-body {
-  width: 10000px;
-}
+
 .media-object {
   display: block;
 }

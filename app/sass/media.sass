@@ -10,7 +10,255 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width:768px) 
-	
+	body
+		font-size: 12px
+
+	=kerning($ls)
+		letter-spacing: $ls+px
+	$main_color: #f7931e
+	$font_color: #131313
+	h1
+		// font-size: 5.8em
+		font-size: 36px
+		+kerning(-3.5)
+		font-weight: 700
+	h2
+		// font-size: 3.47em
+		font-size: 30px
+		+kerning(-2)
+		font-weight: 700
+
+	h3
+		// font-size: 3em
+		font-size: 24px
+		+kerning(-1)
+	h4
+		// font-size: 2.6em
+		font-size: 18px
+		+kerning(-1.5)
+
+	h5
+		// font-size: 1.87em
+		font-size: 14px
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+		padding: 0
+	.navbar-nav, .row
+		margin-left: 0
+		margin-right: 0
+	.media
+		overflow: visible
+	.media-body
+		max-width: 85vw
+		padding: 0.5em!important
+	.media-left, .media-right, .media-body
+		display: block
+	img
+		max-width: 100vw
+	*
+		padding: 0
+		margin: 0
+	button
+		float: none
+	body section.s_banner_svg .news_item.half .media .grey
+		margin-top: 6em
+	body
+		header
+			.logo-container
+				padding: 0
+			.tagline
+				h3
+					// +kerning(-1)
+			.top_mnu
+				ul
+					li.dropdown
+						ul.dropdown-menu
+							li
+								a
+									font-size: 1em
+		section.s_slider
+			min-height: 1px
+			// overflow: visible
+			padding-top: 1em
+			h1
+				// +kerning(-3.5)	
+		section.s_content
+			.container
+				padding: .3em
+				.first_row
+					margin: 0
+					padding: 0
+					.left_col
+						h1
+							// +kerning(-3)
+				.second_row
+					ol
+						padding-left: 3.2em
+		section.s_banners
+			.news_item
+				margin: .5em
+				padding: .5em auto
+				.media
+					overflow: visible
+					white-space: normal
+					display: block
+					.item_row
+						margin: 0
+						padding: 0
+						.media-left
+							padding: 0
+							img.media-object
+								width: 100%
+								margin: 0 auto
+						.media-body
+							padding: 0.5em
+							white-space: normal
+							max-width: 80vw
+							overflow: visible
+							.item_descr_footer
+								button
+									float: none
+				&.large
+					.media
+						.item_row
+							.media-left
+								img.media-object
+									width: 100%
+									margin: 0 auto
+							.media-body
+								padding-right: .5em
+
+				&.half
+					.media
+						.item_row
+							.media-left
+								img.media-object
+									width: 100%
+									margin: 0 auto
+					&.full_img
+						margin-top: 3.5em
+			.media
+				max-width: 100vw
+				overflow: visible
+				white-space: normal
+				display: block
+				.item
+					margin: 0
+					padding: 0
+					.media-left
+						margin: 0
+						padding: 0
+						img.media-object
+							margin: 0 auto
+							width: 100%
+					.media-body
+							padding: 0.5em
+							white-space: normal
+							max-width: 80vw
+							overflow: visible
+							.item_descr_footer
+								button
+									float: none
+		section.s_banners_svg
+			.news_item
+				margin: .5em
+				padding: .5em auto
+				overflow: visible
+				.media
+					overflow: visible
+					white-space: normal
+					display: block
+					.item_row
+						margin: 0
+						padding: 0
+						.media-left
+							padding: 0
+							margin: 0 auto
+							svg.media-object
+								margin: 0 auto
+						.media-body
+							padding: 0.5em
+							white-space: normal
+							max-width: 80vw
+							overflow: visible
+							.item_descr_footer
+								button
+									float: none
+				&.large
+					overflow: visible
+					.media
+						overflow: visible
+						white-space: normal
+						display: block
+						.item_row
+							.media-left
+								svg.media-object
+									width: 100%
+									margin: 0 auto
+							.media-body
+								padding-right: .5em
+								overflow: visible
+								white-space: normal
+								display: block
+
+				&.half
+					.media
+						.item_row
+							.media-left
+								svg.media-object
+									width: 100%
+									margin: 0 auto
+					&.full_img
+						margin-top: 3.5em
+			.media
+				max-width: 100vw
+				overflow: visible
+				white-space: normal
+				display: block
+				.item
+					margin: 0
+					padding: 0
+					.media-left
+						margin: 0
+						padding: 0
+						svg.media-object
+							margin: 0 auto
+							width: 100%
+					.media-body
+							padding: 0.5em
+							white-space: normal
+							max-width: 80vw
+							overflow: visible
+							.item_descr_footer
+								button
+									float: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width:480px) 
@@ -18,7 +266,9 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px)
-	
+
+
+
 
 
 /*==========  Mobile First Method  ==========*/
