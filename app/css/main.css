@@ -79,9 +79,13 @@ button {
 }
 
 .empty {
-  background-color: transparent;
+  background-color: #fff;
   color: #f7931e;
   border: 1px solid #f7931e;
+}
+
+.grey {
+  background-color: #e6e6e6;
 }
 
 body header {
@@ -582,6 +586,154 @@ body section.s_banners .media .item .media-body .item_descr_footer ul li {
 
 body section.s_banners .media .item .media-body .item_descr_footer ul li:last-child {
   color: #f7931e;
+}
+
+body section.s_banner_svg .news_item {
+  padding: 0;
+}
+
+body section.s_banner_svg .news_item .media .item_row {
+  border: 1px solid #b3b3b3;
+}
+
+body section.s_banner_svg .news_item .media .item_row .media-left svg.media-object {
+  padding: 0;
+}
+
+body section.s_banner_svg .news_item .media .item_row .media-body {
+  padding: .8em;
+}
+
+body section.s_banner_svg .news_item .media .item_row .media-body .item_descr_body h5 {
+  font-weight: 600;
+}
+
+body section.s_banner_svg .news_item .media .item_row .media-body .item_descr_footer button {
+  float: left;
+}
+
+body section.s_banner_svg .news_item.large {
+  margin-bottom: 1.5em;
+}
+
+body section.s_banner_svg .news_item.large .media .item_row .media-left svg.media-object {
+  width: 240px;
+  height: 235px;
+}
+
+body section.s_banner_svg .news_item.large .media .item_row .media-body {
+  padding-right: 2em;
+}
+
+body section.s_banner_svg .news_item.large .media .item_row .media-body .item_descr_body h5 {
+  padding: .5em 0;
+  font-size: 2.4em;
+}
+
+body section.s_banner_svg .news_item.large .media .item_row .media-body .item_descr_body ul li {
+  padding: .5em 0;
+}
+
+body section.s_banner_svg .news_item.large .media .item_row .media-body .item_descr_footer {
+  margin-top: 2em;
+}
+
+body section.s_banner_svg .news_item.half .media .item_row {
+  padding: 1em;
+  margin-right: .5em;
+}
+
+body section.s_banner_svg .news_item.half .media .item_row .media-left svg.media-object,
+body section.s_banner_svg .news_item.half .media .item_row .media-right svg.media-object {
+  width: 180px;
+  height: 225px;
+}
+
+body section.s_banner_svg .news_item.half .media .item_row .media-body .item_descr_body h5 {
+  font-size: 2.27em;
+  padding: .5em 0;
+}
+
+body section.s_banner_svg .news_item.half .media button {
+  margin-top: 1.85em;
+}
+
+body section.s_banner_svg .news_item.half .media .item_descr_footer button {
+  margin-top: 1em;
+  margin-left: .5em;
+}
+
+body section.s_banner_svg .news_item.half .media .grey {
+  margin-right: 0;
+  margin-left: .5em;
+}
+
+body section.s_banner_svg .news_item.half.thin {
+  margin-bottom: 4em;
+}
+
+body section.s_banner_svg .news_item.half.thin .media .item_row {
+  padding: 1.1em 0;
+  margin: .5em;
+  color: #fff;
+}
+
+body section.s_banner_svg .news_item.half.thin .media .item_row .media-left svg.media-object {
+  width: 105px;
+  height: 115px;
+}
+
+body section.s_banner_svg .news_item.half.thin .media .grey {
+  color: #666;
+  padding: 0;
+}
+
+body section.s_banner_svg .news_item.half.thin .media .grey .media-body .item_descr_body h5 {
+  font-size: 2em;
+}
+
+body section.s_banner_svg .news_item.half.thin .media .grey .media-body .item_descr_body p {
+  font-size: 1.1em;
+}
+
+body section.s_banner_svg .news_item.vertical {
+  margin-top: 3em;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row {
+  border: 1px solid #b3b3b3;
+  margin: .5em;
+  padding: 1.5em .5em;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row.full {
+  color: #fff;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row .item_image {
+  text-align: center;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row .item_image svg {
+  height: 10em;
+  width: 6.5em;
+  margin: 0 auto;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row .item_description {
+  padding: .5em;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row .item_description .item_descr_body h5 {
+  font-weight: 600;
+  font-size: 1.67em;
+}
+
+body section.s_banner_svg .news_item.vertical .item_row .item_description .item_descr_footer button {
+  width: 95%;
+  padding: 0;
+  text-align: center;
+  margin-top: 1em;
 }
 /*==========  Desktop First Method  ==========*/
 
