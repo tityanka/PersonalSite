@@ -77,15 +77,15 @@ h5 {
 
 button {
   border: 1px solid #f7931e;
-  line-height: 2em;
-  font-size: 1.3em;
+  line-height: 2.5em;
+  font-size: 1.27em;
+  width: 11em;
   letter-spacing: 0px;
   text-align: center;
   -webkit-border-radius: 2em;
   border-radius: 2em;
   color: #fff;
   margin-bottom: 1em;
-  padding: 0 3em;
   background-color: #f7931e;
 }
 
@@ -379,7 +379,12 @@ body section.s_content .third_row .third_row_form form input {
   font-size: 1.5em;
   text-align: center;
   margin: 1em auto;
+  width: 13.35em;
   letter-spacing: -1px;
+}
+
+body section.s_content .third_row .third_row_form form input:focus {
+  outline: 1px solid #ccc;
 }
 
 body section.s_banners {
