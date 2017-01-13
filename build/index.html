@@ -6,14 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
-    <!--build:css css/vendor.min.css-->
-    <!--bower:css-->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!--endbower-->
-    <!--endbuild-->
-    <!-- build:css css/main.min.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild-->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
     <header class="full">
@@ -96,11 +90,11 @@
         </div>
         <div class="row first_row">
           <div class="col-md-6">
-            <div class="img_wrapper"></div>
+            <div class="img_wrapper"><img class="img-responsive" src="img/rocket-thumb.jpg" alt=""></div>
           </div>
           <div class="col-md-6 left_content">
             <h2>Собственный сайт: лицо успешной компании</h2>
-            <ul class="list-unstyled">
+            <ul>
               <li>Думаете, что ваши методы отлично подходят на каждый рабочий день?</li>
               <li>Считаете, что продаёте лучше всех в отделе?</li>
               <li>И вам правда этого достаточно?</li>
@@ -147,16 +141,14 @@
         </div>
       </div>
     </section>
-    <section class="img_banners">
+    <section class="s_banners">
       <div class="container">
         <div class="row">
-          <div class="banner_container">
-            <div class="banner">
-              <div class="banner_wrapper media">
-                <div class="media-left">
-                  <div class="img_wrapper media-object"></div>
-                </div>
-                <div class="content_wrapper media-body">
+          <div class="news_item large col-md-12">
+            <div class="media">
+              <div class="item_row">
+                <div class="media-left"><img class="media-object" src="img/rocket-thumb.jpg" alt=""></div>
+                <div class="media-body">
                   <div class="item_descr_head">
                     <ul class="list-inline">
                       <li>2017.11.12</li>
@@ -185,13 +177,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 banner_container half">
-            <div class="banner">
-              <div class="banner_wrapper media">
-                <div class="media-left">
-                  <div class="img_wrapper media-object"></div>
-                </div>
-                <div class="content_wrapper media-body">
+          <div class="news_item half col-md-6">
+            <div class="media">
+              <div class="item_row">
+                <div class="media-left"><img class="media-object" src="img/rocket-thumb.jpg" alt=""></div>
+                <div class="media-body">
                   <div class="item_descr_head">
                     <ul class="list-inline">
                       <li>2017.11.12</li>
@@ -200,25 +190,23 @@
                   </div>
                   <div class="item_descr_body">
                     <h5>Собственный сайт: лицо успешной компании</h5>
-                    <p>Можно ли успешно продавать свои услуги без сайта компании? </p>
+                    <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
                   </div>
                   <div class="item_descr_footer">
-                    <ul class="list-inline text-right">
-                      <li>Сайт</li>
+                    <ul class="list-inline text-center">
                       <li>Компания</li>
                       <li>Услуги</li>
                       <li>Теги</li>
                     </ul>
                   </div>
                 </div>
+                <button class="pull-right">Показать еще</button>
               </div>
             </div>
-            <button class="pull-right">Показать еще</button>
           </div>
-          <div class="col-md-6 banner_container half">
-            <div class="banner">
-              <div class="img_wrapper"></div>
-              <div class="content_wrapper">
+          <div class="news_item half full_img col-md-6">
+            <div class="item_row">
+              <div class="item_description">
                 <div class="item_descr_head">
                   <ul class="list-inline">
                     <li>2017.11.12</li>
@@ -242,26 +230,22 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 banner_container part">
-            <div class="banner full">
-              <div class="banner_wrapper media">
-                <div class="media-left">
-                  <div class="img_wrapper media-object"></div>
-                </div>
-                <div class="content_wrapper media-body">
+          <div class="col-md-6 news_item half">
+            <div class="media">
+              <div class="item full">
+                <div class="media-left"><img class="media-object" src="img/rocket-thumb.jpg" alt=""></div>
+                <div class="media-body">
                   <h5>Собственный сайт: лицо успешной компании</h5>
                   <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 banner_container part">
-            <div class="banner">
-              <div class="banner_wrapper media">
-                <div class="media-left">
-                  <div class="img_wrapper media-object"></div>
-                </div>
-                <div class="content_wrapper media-body">
+          <div class="col-md-6 news_item half">
+            <div class="media">
+              <div class="item">
+                <div class="media-left"><img class="media-object" src="img/rocket-thumb.jpg" alt=""></div>
+                <div class="media-body">
                   <div class="item_descr_body">
                     <h5>Собственный сайт: лицо успешной компании</h5>
                     <ul class="list-inline">
@@ -284,86 +268,78 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-xs-12 banner_container vertical">
-            <div class="banner">
-              <div class="banner_wrapper">
-                <div class="img_wrapper"></div>
-                <div class="content_wrapper">
-                  <div class="item_descr_head">
-                    <ul class="list-inline">
-                      <li>2017.11.12</li>
-                      <li>Название раздела</li>
-                    </ul>
-                  </div>
-                  <div class="item_descr_body">
-                    <h5>Собственный сайт: лицо успешной компании</h5>
-                    <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
-                  </div>
-                  <div class="item_descr_footer">
-                    <button class="empty">Подробнее</button>
-                    <ul class="list-inline">
-                      <li>Компания</li>
-                      <li>Услуги</li>
-                      <li>Теги</li>
-                    </ul>
-                  </div>
+          <div class="news_item vertical col-md-3 col-xs-12">
+            <div class="item_row">
+              <div class="item_image"><img class="img-responsive" src="img/rocket-thumb.jpg" alt=""></div>
+              <div class="item_description">
+                <div class="item_descr_head">
+                  <ul class="list-inline">
+                    <li>2017.11.12</li>
+                    <li>Название раздела</li>
+                  </ul>
+                </div>
+                <div class="item_descr_body">
+                  <h5>Собственный сайт: лицо успешной компании</h5>
+                  <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
+                </div>
+                <div class="item_descr_footer">
+                  <button class="empty">Подробнее</button>
+                  <ul class="list-inline">
+                    <li>Компания</li>
+                    <li>Услуги</li>
+                    <li>Теги</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-xs-12 banner_container vertical">
-            <div class="banner">
-              <div class="banner_wrapper">
-                <div class="img_wrapper"></div>
-                <div class="content_wrapper">
-                  <div class="item_descr_head">
-                    <ul class="list-inline">
-                      <li>2017.11.12</li>
-                      <li>Название раздела</li>
-                    </ul>
-                  </div>
-                  <div class="item_descr_body">
-                    <h5>Собственный сайт: лицо успешной компании</h5>
-                    <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
-                  </div>
-                  <div class="item_descr_footer">
-                    <ul class="list-inline">
-                      <li>Компания</li>
-                      <li>Услуги</li>
-                      <li>Теги</li>
-                    </ul>
-                  </div>
+          <div class="news_item vertical col-md-3 col-xs-12">
+            <div class="item_row">
+              <div class="item_image"><img class="img-responsive" src="img/rocket-thumb.jpg" alt=""></div>
+              <div class="item_description">
+                <div class="item_descr_head">
+                  <ul class="list-inline">
+                    <li>2017.11.12</li>
+                    <li>Название раздела</li>
+                  </ul>
+                </div>
+                <div class="item_descr_body">
+                  <h5>Собственный сайт: лицо успешной компании</h5>
+                  <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
+                </div>
+                <div class="item_descr_footer">
+                  <ul class="list-inline">
+                    <li>Компания</li>
+                    <li>Услуги</li>
+                    <li>Теги</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-xs-12 banner_container vertical">
-            <div class="banner">
-              <div class="banner_wrapper">
-                <div class="img_wrapper"></div>
-                <div class="content_wrapper">
-                  <div class="item_descr_head">
-                    <ul class="list-inline">
-                      <li>2017.11.12</li>
-                      <li>Название раздела</li>
-                    </ul>
-                  </div>
-                  <div class="item_descr_body">
-                    <h5>Собственный сайт: лицо успешной компании</h5>
-                  </div>
+          <div class="news_item vertical col-md-3 col-xs-12">
+            <div class="item_row">
+              <div class="item_image"><img class="img-responsive" src="img/rocket-thumb.jpg" alt=""></div>
+              <div class="item_description">
+                <div class="item_descr_head">
+                  <ul class="list-inline">
+                    <li>2017.11.12</li>
+                    <li>Название раздела</li>
+                  </ul>
+                </div>
+                <div class="item_descr_body">
+                  <h5>Собственный сайт: лицо успешной компании</h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-xs-12 banner_container vertical">
-            <div class="banner">
-              <div class="banner_wrapper">
-                <div class="img_wrapper"></div>
-                <div class="content_wrapper">
-                  <div class="item_descr_body">
-                    <h5>Собственный сайт: лицо успешной компании</h5>
-                    <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
-                  </div>
+          <div class="news_item vertical col-md-3 col-xs-12">
+            <div class="item_row">
+              <div class="item_image"><img class="img-responsive" src="img/rocket-thumb.jpg" alt=""></div>
+              <div class="item_description">
+                <div class="item_descr_body">
+                  <h5>Собственный сайт: лицо успешной компании</h5>
+                  <p>Зачем студии веб-разработок нужен собственный сайт и каким он должен быть? </p>
                 </div>
               </div>
             </div>
@@ -632,14 +608,7 @@
         </div>
       </div>
     </footer>
-    <!--build:js js/vendor.min.js-->
-    <!-- bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- endbower-->
-    <!-- endbuild-->
-    <!-- build:js js/main.min.js-->
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- endbuild-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

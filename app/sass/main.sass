@@ -3,6 +3,9 @@ $font_color: #131313
 // $margin: 3.2em
 $margin: 48px
 
+.row
+	border-left: 1px solid
+	border-right: 1px solid
 
 =kerning($ls)
 	letter-spacing: $ls+px
@@ -40,8 +43,8 @@ a
 		outline: 0
 
 ul
-	padding: 0
-	margin: 0
+	// padding: 0
+	// margin: 0
 	li
 		list-style-type: none
 h1
@@ -112,10 +115,15 @@ button
 			border: 1px solid #fff
 
 .img_wrapper
-	position: relative
-	overflow: hidden
-	img
-		position: absolute
+	background-image: url("../img/rocket-004.jpg")
+	background-size: cover
+	// background-position: center
+	background-position: top center
+
+	// position: relative
+	// overflow: hidden
+	// img
+	// 	position: absolute
 
 
 body
@@ -157,6 +165,7 @@ body
 					border: none
 					padding: 0
 					margin: 0
+					width: 2em
 					// position: absolute
 					// top: -9.5em
 					// right: -1.4em
@@ -240,7 +249,9 @@ body
 					font-size: 1.55em
 	
 	section.s_content
-		padding-top: $margin
+		margin-top: $margin
+		margin-bottom: $margin
+
 		.zero_row
 			margin-bottom: $margin/2
 			.left_col
@@ -278,14 +289,16 @@ body
 						font-style: italic
 						line-height: 0.8
 		.first_row
-			margin-bottom: $margin
+			// margin-bottom: $margin
 			.img_wrapper
-				height: 27em
-				img
-					height: 100%
-					zoom: 2
-					bottom: 0
-					right: 0
+				height: 28em
+				background-position: center
+
+				// img
+					// height: 100%
+					// zoom: 2
+					// bottom: 0
+					// right: 0
 					// margin-bottom: 4em
 			.left_content
 				h2
@@ -303,24 +316,29 @@ body
 
 
 		.second_row
-			// margin-top: 2em
-			// margin: 2.5em 0
-			font-style: italic
+			margin-top: $margin
+			margin-bottom: $margin
+			// margin: $margin 0
 
-			ul
-				padding-left: 3.2em
-				// margin: 2.5em 0
-				li
-					list-style-type: disc
-					color: $main_color
-					font-size: .9em
-					span
-						color: #000
-						// line-height: 1em
-			ol
-				// margin: 2.5em 0
-				li
-					font-size: .9em
+			font-style: italic
+			.col-md-6
+				padding: 0
+				ul
+					padding-left: $margin/2
+					margin-left: $margin
+					li
+						list-style-type: disc
+						color: $main_color
+						font-size: .9em
+						span
+							color: #000
+				ol
+					// margin: 2.5em 0
+					padding-left: $margin
+					padding-right: $margin/2
+
+					li
+						font-size: .9em
 					
 
 		.third_row
@@ -330,10 +348,10 @@ body
 					font-weight: 700
 					line-height: 1em
 					color: #666
-					// margin-bottom: 1em
+					margin-bottom: 1em
 				ul
 					li
-						// margin-bottom: 1em
+						margin-bottom: 1em
 			.third_row_form
 				margin: 0
 				padding: 0
@@ -372,193 +390,96 @@ body
 						// color: #fff
 						// margin-bottom: 1em
 						// padding: 0 3em
-	section.s_banners
-		margin-top: 3em
-		.news_item
-			padding: 0
-			.media
-				.item_row
-					border: 1px solid #b3b3b3
-					margin: .5em
+	
+	
+
+	section.img_banners
+		.banner_container
+			margin-bottom: $margin
+			.banner
+				border: 1px solid #b3b3b3
+				position: relative
+				.banner_wrapper.media
 					.media-left
-						img.media-object
-							padding: 0
-					.media-body
-						padding: .8em
+						.img_wrapper.media-object
+							width: 24em
+							height: 23em
+							background-position: center
+					.content_wrapper.media-body
 						.item_descr_head
 							ul
 								li
-									&:nth-child(1)
-										font-weight: 700
-										margin-right: 1em
-									&:nth-child(2)
-										font-weight: 400
-										font-size: 1.1em
-										line-height: 1.2em
-										background-color: #e6e6e6
-										padding: .3em .5em
 						.item_descr_body
 							h5
-								font-weight: 600
 							ul
 								li
 						.item_descr_footer
 							button
-								float: left
 							ul
 								li
-									line-height: 2.3em
-									font-weight: 700
-									&:last-child
-										color: $main_color
-			&.large
-				.media
-					.item_row
-						.media-left
-							img.media-object
-								width: 23em
-								height: 23em
-						.media-body
-							padding-right: 2em
-							.item_descr_body
-								h5
-									padding: .5em 0
-								ul
-									li
-										padding: .5em 0
-							.item_descr_footer
-								margin-top: 2em
 			&.half
-				.media
-					.item_row
-						.media-left
-							img.media-object
-								width: 12em
-								height: 16em
-						.media-body
-							// padding: .8em
-							.item_descr_head
-							.item_descr_body
-								h5
-									font-size: 1.6em
-									padding: .5em 0
-						button
-							margin-top: .5em
-				&.full_img
-					padding: .5em
-					position: relative
-					.item_row
-						background-image: url("../img/rocket-004.jpg")
-						background-size: cover
-						position: relative
-						min-height: 16em
-						.item_description
+				padding: 0
+				button
+					margin: 0
+					margin-top: $margin
+				&:first-child
+					padding-right: $margin/2
+				&:nth-child(2)
+					.banner
+						.img_wrapper
+							height: 16em
+							background-position: top
+						.content_wrapper
+							background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%) /* FF3.6-15 */
+							background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) /* Chrome10-25,Safari5.1-6 */
+							background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 )
 							position: absolute
-							padding: 2em
+							// z-index: 999
 							bottom: 0
 							left: 0
-							z-index: 999
-							color: #fff
 							.item_descr_head
 								ul
 									li
-										&:nth-child(1)
-											font-weight: 700
-											margin-right: 1em
-										&:nth-child(2)
-											font-weight: 400
-											font-size: 1.1em
-											line-height: 1.2em
-											background-color: #e6e6e6
-											padding: .3em .5em
-											color: $font_color
+							.item_descr_body
+								h5
+								p
 							.item_descr_footer
-								ul
+								ul.list-inline.text-right
 									li
-										line-height: 2.3em
-										font-weight: 700
-										&:last-child
-											color: $main_color
-					button
-						margin-top: .5em
-			
+				.banner_wrapper.media
+					.media-left
+						.img_wrapper.media-object
+							width: 12em
+							height: 16em
+			&.part
+				padding: 0
+				&:first-child
+					padding-right: $margin/2
+				// &:nth-child(2)
+				.banner_wrapper.media
+					.media-left
+						.img_wrapper.media-object
+							width: 12em
+							height: 11em
+
 			&.vertical
-				margin-top: 3em
-				.item_row
-					border: 1px solid #b3b3b3
-					margin: .5em
-					.item_description
-						padding: 1em
-						.item_descr_head
-							ul
-								li
-									&:nth-child(1)
-										font-weight: 700
-										margin-right: 1em
-										font-size: .9em
-									&:nth-child(2)
-										font-weight: 400
-										font-size: 1em
-										line-height: 1.2em
-										background-color: #e6e6e6
-										padding: .3em .5em
-						.item_descr_body
-							h5
-								font-weight: 600
-								font-size: 1.67em
-						.item_descr_footer
-							button
-								width: 95%
-								padding: 0
-								text-align: center
-								margin-top: 1em
-							ul
-								li
-									// line-height: 2.3em
-									font-weight: 700
-									&:last-child
-										color: $main_color
-		.media
-			width: 100%
-			.item
-				border: 1px solid #b3b3b3
-				margin: .5em
-				.media-left
-					margin: 0
-					padding: 0
-					img.media-object
-						margin: 0
-						padding: 0
-						width: 12em
-						height: 12em
-				.media-body
-					padding: .8em
-					h5
-						font-size: 1.37em
-					p
-						font-size: .82em
-						margin-top: 2em
-					.item_descr_body
-						ul
-							li
-								font-size: .66em
-								&:nth-child(1)
-									font-weight: 700
-									margin-right: 1em
-								&:nth-child(2)
-									font-weight: 400
-									font-size: .73em
-									line-height: 1.2em
-									background-color: #e6e6e6
-									padding: .3em .5em
-						p
-							margin-top: 0
-					.item_descr_footer
-						ul
-							li
-								font-size: .87em
-								&:last-child
-									color: $main_color
+				padding: 0
+				margin: 0
+				padding-right: $margin/2
+				&:last-child
+					padding-right: 0
+				.banner
+					.banner_wrapper
+						.img_wrapper
+							height: 16em
+						.content_wrapper
+
+
+
+
+
+
 
 	section.s_banner_svg
 		.news_item
