@@ -39,26 +39,36 @@ h1 {
   font-size: 87px;
   letter-spacing: -6px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   font-size: 52px;
   letter-spacing: -4px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
   font-size: 45px;
   letter-spacing: -1px;
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
   font-size: 39px;
   letter-spacing: -3px;
+  margin: 0;
+  padding: 0;
 }
 
 h5 {
   font-size: 28px;
+  margin: 0;
+  padding: 0;
 }
 
 .full {
@@ -100,8 +110,17 @@ button.empty:hover {
   border: 1px solid #fff;
 }
 
+.img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img_wrapper img {
+  position: absolute;
+}
+
 body header {
-  padding-top: 2em;
+  padding-top: 48px;
 }
 
 body header .logo-container {
@@ -123,8 +142,6 @@ body header .logo-container .logo_text {
 
 body header .logo-container .logo_text h2 {
   line-height: 1em;
-  margin: 0;
-  padding: 0;
   letter-spacing: -2px;
 }
 
@@ -217,16 +234,16 @@ body header .main_mnu nav.navbar.navbar-default #main_mnu.collapse.navbar-collap
 }
 
 body section.s_slider {
-  min-height: 500px;
+  min-height: 595px;
   position: relative;
   overflow: hidden;
-  padding-top: 12em;
+  padding-top: 152.16px;
 }
 
 body section.s_slider img {
   width: 100vw;
   position: absolute;
-  top: 0;
+  bottom: 0;
   z-index: -100;
 }
 
@@ -255,21 +272,23 @@ body section.s_slider .logo-container .logo_text span {
   font-size: 1.55em;
 }
 
-body section.s_content .first_row {
-  margin-top: 3em;
+body section.s_content {
+  padding-top: 48px;
 }
 
-body section.s_content .first_row .left_col h1 {
+body section.s_content .zero_row {
+  margin-bottom: 24px;
+}
+
+body section.s_content .zero_row .left_col h1 {
   color: #666;
-  margin-bottom: 1em;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
-body section.s_content .first_row .left_col img {
-  width: 100%;
-  margin-bottom: 4em;
-}
-
-body section.s_content .first_row .right_col blockquote {
+body section.s_content .zero_row .right_col blockquote {
   background-color: #f2f2f2;
   border: none;
   padding: 1.2em 3em;
@@ -278,7 +297,7 @@ body section.s_content .first_row .right_col blockquote {
   font-style: italic;
 }
 
-body section.s_content .first_row .right_col blockquote::before {
+body section.s_content .zero_row .right_col blockquote::before {
   content: "\"";
   color: #fff;
   position: absolute;
@@ -289,7 +308,7 @@ body section.s_content .first_row .right_col blockquote::before {
   line-height: 1;
 }
 
-body section.s_content .first_row .right_col blockquote::after {
+body section.s_content .zero_row .right_col blockquote::after {
   content: "\"";
   color: #fff;
   position: absolute;
@@ -300,13 +319,31 @@ body section.s_content .first_row .right_col blockquote::after {
   line-height: 0.8;
 }
 
-body section.s_content .first_row .right_col h2 {
-  line-height: 1em;
-  color: #666;
-  margin-bottom: 1.33em;
+body section.s_content .first_row {
+  margin-bottom: 48px;
 }
 
-body section.s_content .first_row .right_col ul li {
+body section.s_content .first_row .img_wrapper {
+  height: 27em;
+}
+
+body section.s_content .first_row .img_wrapper img {
+  height: 100%;
+  zoom: 2;
+  bottom: 0;
+  right: 0;
+}
+
+body section.s_content .first_row .left_content h2 {
+  line-height: 1em;
+  color: #666;
+}
+
+body section.s_content .first_row .left_content ul {
+  margin: 48px 0;
+}
+
+body section.s_content .first_row .left_content ul li {
   margin-bottom: 1em;
 }
 
@@ -316,7 +353,6 @@ body section.s_content .second_row {
 
 body section.s_content .second_row ul {
   padding-left: 3.2em;
-  margin: 2.5em 0;
 }
 
 body section.s_content .second_row ul li {
@@ -329,10 +365,6 @@ body section.s_content .second_row ul li span {
   color: #000;
 }
 
-body section.s_content .second_row ol {
-  margin: 2.5em 0;
-}
-
 body section.s_content .second_row ol li {
   font-size: .9em;
 }
@@ -341,11 +373,6 @@ body section.s_content .third_row .third_row_content h4 {
   font-weight: 700;
   line-height: 1em;
   color: #666;
-  margin-bottom: 1em;
-}
-
-body section.s_content .third_row .third_row_content ul li {
-  margin-bottom: 1em;
 }
 
 body section.s_content .third_row .third_row_form {

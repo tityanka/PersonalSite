@@ -1,7 +1,12 @@
 $main_color: #f7931e
 $font_color: #131313
+// $margin: 3.2em
+$margin: 48px
+
+
 =kerning($ls)
 	letter-spacing: $ls+px
+
 
 body
 	font-family: 'Open Sans', sans-serif
@@ -44,24 +49,34 @@ h1
 	font-size: 87px
 	+kerning(-6)
 	font-weight: 700
+	margin: 0
+	padding: 0
 h2
 	// font-size: 3.47em
 	font-size: 52px
 	+kerning(-4)
 	font-weight: 700
+	margin: 0
+	padding: 0
 
 h3
 	// font-size: 3em
 	font-size: 45px
 	+kerning(-1)
+	margin: 0
+	padding: 0
 h4
 	// font-size: 2.6em
 	font-size: 39px
 	+kerning(-3)
+	margin: 0
+	padding: 0
 
 h5
 	// font-size: 1.87em
 	font-size: 28px
+	margin: 0
+	padding: 0
 
 .hidden
 	display: none
@@ -96,10 +111,18 @@ button
 			color: #fff
 			border: 1px solid #fff
 
+.img_wrapper
+	position: relative
+	overflow: hidden
+	img
+		position: absolute
+
 
 body
 	header
-		padding-top: 2em
+		// padding-top: 2em
+		padding-top: $margin
+
 		.logo-container
 			color: #fff
 			margin: 0 auto
@@ -113,8 +136,8 @@ body
 				padding-top: 2em
 				h2
 					line-height: 1em
-					margin: 0
-					padding: 0
+					// margin: 0
+					// padding: 0
 					+kerning(-2)
 				span
 					// +kerning(-1)
@@ -184,15 +207,15 @@ body
 										background-color: #fff
 
 	section.s_slider
-		min-height: 500px
+		min-height: 595px
 		position: relative
 		overflow: hidden
-		padding-top: 12em
+		padding-top: $margin*3.17
 
 		img
 			width: 100vw
 			position: absolute
-			top: 0
+			bottom: 0
 			z-index: -100
 		.logo-container
 			color: #fff
@@ -217,18 +240,17 @@ body
 					font-size: 1.55em
 	
 	section.s_content
-		.first_row
-			margin-top: 3em
+		padding-top: $margin
+		.zero_row
+			margin-bottom: $margin/2
 			.left_col
 				h1
 					color: #666
-					// font-weight: 600
-					// font-size: 4em
-					// +kerning(-4)
-					margin-bottom: 1em
-				img
-					width: 100%
-					margin-bottom: 4em
+					vertical-align: middle
+					display: inline-block
+					margin: 0
+					padding: 0
+					// margin-bottom: 1em
 			.right_col	
 				blockquote
 					background-color: #f2f2f2
@@ -237,7 +259,6 @@ body
 					font-size: 1.33em
 					font-weight: 300
 					font-style: italic
-
 					&::before
 						content: "\""
 						color: #fff
@@ -256,16 +277,31 @@ body
 						font-size: 5em
 						font-style: italic
 						line-height: 0.8
+		.first_row
+			margin-bottom: $margin
+			.img_wrapper
+				height: 27em
+				img
+					height: 100%
+					zoom: 2
+					bottom: 0
+					right: 0
+					// margin-bottom: 4em
+			.left_content
 				h2
 					// font-size: 3em
 					line-height: 1em
 					color: #666
 					// +kerning(-4)
-					margin-bottom: 1.33em
+					// margin-bottom: 1.33em
 				ul
+					margin: $margin 0
 					li
 						margin-bottom: 1em
 						// font-size: .9em
+
+
+
 		.second_row
 			// margin-top: 2em
 			// margin: 2.5em 0
@@ -273,7 +309,7 @@ body
 
 			ul
 				padding-left: 3.2em
-				margin: 2.5em 0
+				// margin: 2.5em 0
 				li
 					list-style-type: disc
 					color: $main_color
@@ -282,7 +318,7 @@ body
 						color: #000
 						// line-height: 1em
 			ol
-				margin: 2.5em 0
+				// margin: 2.5em 0
 				li
 					font-size: .9em
 					
@@ -294,10 +330,10 @@ body
 					font-weight: 700
 					line-height: 1em
 					color: #666
-					margin-bottom: 1em
+					// margin-bottom: 1em
 				ul
 					li
-						margin-bottom: 1em
+						// margin-bottom: 1em
 			.third_row_form
 				margin: 0
 				padding: 0

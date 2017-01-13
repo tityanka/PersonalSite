@@ -30,7 +30,7 @@ html(lang='ru')
 							span лицо успешной компании
 					.tagline.col-md-offset-4.hidden-xs
 						h3 Собственный сайт: лицо успешной компании
-			.container
+			.container-fluid
 				.row
 					.col-md-8.col-md-offset-4.main_mnu
 						//- nav.top_mnu
@@ -99,24 +99,27 @@ html(lang='ru')
 
 		section.s_content
 			.container
-				.row.first_row
+				.row.zero_row
 					.col-md-6.left_col
 						h1 PersonalSite
-						img.img-responsive(src="img/rocket-thumb.jpg", alt="")
-						
+						//- img.img-responsive(src="img/rocket-thumb.jpg", alt="")
 					.col-md-6.right_col
 						blockquote
 							p Ничто так не раскрывает недостатки проектирования как реализация
 							p // J. Horton
+				.row.first_row
+					.col-md-6
+						.img_wrapper
+							img.img-responsive(src="img/rocket-thumb.jpg", alt="")
+					.col-md-6.left_content
 						h2 Собственный сайт: лицо успешной компании
 						ul
 							li Думаете, что ваши методы отлично подходят на каждый рабочий день?
 							li Считаете, что продаёте лучше всех в отделе?
 							li И вам правда этого достаточно?
 							li Узнайте, как стать лучшим в профессии, а не только в своей компании! Вашему вниманию – видеоуроки о правилах продаж, красивых методиках и удачных схемах от успешного менеджера компании «1С-Битрикс».
-							li 
-								br
-							li Этот курс – и для продвинутых, и для начинающих менеджеров. Даже если вы ещё ничего в жизни не продали, посмотрите и научитесь чужому опыту без собственных ошибок!
+							
+						p Этот курс – и для продвинутых, и для начинающих менеджеров. Даже если вы ещё ничего в жизни не продали, посмотрите и научитесь чужому опыту без собственных ошибок!
 				.row.second_row
 					.col-md-6
 						ul
