@@ -3,9 +3,9 @@ $font_color: #131313
 // $margin: 3.2em
 $margin: 48px
 
-.row
-	border-left: 1px solid
-	border-right: 1px solid
+// .row
+// 	border-left: 1px solid
+// 	border-right: 1px solid
 
 =kerning($ls)
 	letter-spacing: $ls+px
@@ -432,18 +432,44 @@ body
 							background-position: center
 					.content_wrapper
 						display: table-cell
-						// vertical-align: middle
+						vertical-align: middle
+						padding: $margin/2 $margin
 						.item_descr_head
 							ul
 								li
+									&:nth-child(1)
+										font-weight: 700
+										// margin-right: 1em
+									&:nth-child(2)
+										font-weight: 400
+										font-size: 1.1em
+										line-height: 1.2em
+										background-color: #e6e6e6
+										// padding: .3em .5em
 						.item_descr_body
 							h5
+								font-weight: 600
+								margin-bottom: $margin/2
+								margin-top: $margin/2
 							ul
+								margin-bottom: $margin
 								li
+									margin-bottom: $margin/3
 						.item_descr_footer
 							button
+								float: left
+								text-align: center
+								// margin-bottom: $margin
 							ul
 								li
+									line-height: 2.3em
+									font-weight: 700
+									&:last-child
+										color: $main_color
+			// &.large
+			// 	.content_wrapper
+			// 		padding-left: $margin
+			// 		padding-right: $margin
 			&.half
 				padding: 0
 				button
@@ -451,10 +477,20 @@ body
 					margin-top: $margin
 				&:first-child
 					padding-right: $margin/2
+					.banner
+						.content_wrapper
+							padding-right: $margin/2
+							padding-left: $margin/2
+							.item_descr_body
+								h5
+									font-size: 1.6em
+							.item_descr_footer
+								ul
+									margin-bottom: 0
 				&:nth-child(2)
 					.banner
 						.img_wrapper
-							height: 16em
+							height: 21em
 							background-position: top
 						.content_wrapper
 							background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%) /* FF3.6-15 */
@@ -462,33 +498,73 @@ body
 							background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 )
 							position: absolute
-							// z-index: 999
 							bottom: 0
 							left: 0
+							color: #fff
+							padding-right: $margin/2
+							padding-left: $margin
 							.item_descr_head
 								ul
 									li
-							.item_descr_body
-								h5
-								p
+										&:nth-child(1)
+											font-weight: 700
+										&:nth-child(2)
+											font-weight: 400
+											font-size: 1.1em
+											line-height: 1.2em
+											background-color: #e6e6e6
+											color: $font_color
 							.item_descr_footer
-								ul.list-inline.text-right
+								ul
 									li
+										line-height: 2.3em
+										font-weight: 700
+										&:last-child
+											color: $main_color
+				
 				.banner_wrapper.media
 					.media-left
 						.img_wrapper.media-object
-							width: 12em
-							height: 16em
+							width: 16em
+							height: 21em
 			&.part
 				padding: 0
+				.banner
+					.banner_wrapper
+						.content_wrapper
+							padding: 0 $margin/2
+							h5
+								font-size: 1.37em
+								margin-bottom: $margin/2
+							p
+								font-size: .82em
 				&:first-child
 					padding-right: $margin/2
-				// &:nth-child(2)
+				&:nth-child(2)
+					.banner
+						.banner_wrapper
+							.content_wrapper
+								padding-bottom: 0
+								.item_descr_body
+									h5
+										margin-bottom: 0
+									ul
+										margin-bottom: 0
+										li
+											font-size: .66em
+											margin-bottom: 0
+											&:nth-child(1)
+												font-weight: 700
+											&:nth-child(2)
+												font-weight: 400
+												font-size: .73em
+												line-height: 1.2em
+												background-color: #e6e6e6
 				.banner_wrapper.media
 					.media-left
 						.img_wrapper.media-object
 							width: 12em
-							height: 11em
+							height: 12em
 
 			&.vertical
 				padding: 0
@@ -501,8 +577,120 @@ body
 						.img_wrapper
 							height: 16em
 						.content_wrapper
+							// padding: $margin*.75
+							padding: $margin*.2
 
-	section.png_banners
+							.item_descr_head
+								ul
+									li
+										&:nth-child(1)
+											font-weight: 700
+											margin-right: 1em
+											font-size: .9em
+										&:nth-child(2)
+											font-weight: 400
+											font-size: 1em
+											line-height: 1.2em
+											background-color: #e6e6e6
+											// padding: .3em .5em
+							.item_descr_body
+								h5
+									font-weight: 600
+									font-size: 1.67em
+									margin-bottom: $margin/2
+									margin-top: $margin/2
+								p
+									margin-bottom: $margin
+							.item_descr_footer
+								text-align: center
+								button
+									// width: 95%
+									text-align: center
+									margin-bottom: $margin
+								ul
+									li
+										font-weight: 700
+										&:last-child
+											color: $main_color
+	
+
+
+
+	// section.png_banners
+	// 	.banner_container
+	// 		margin-bottom: $margin
+	// 		.banner
+	// 			border: 1px solid #b3b3b3
+	// 			position: relative
+	// 			.banner_wrapper.media
+	// 				padding: $margin/2
+	// 				.media-left, .media-right
+	// 					.png_wrapper.media-object
+	// 						width: 16em
+	// 						height: 16em
+	// 						&.white
+	// 							+white
+	// 						&.orange
+	// 							+orange
+	// 				.content_wrapper
+	// 					display: table-cell
+	// 					// vertical-align: middle
+	// 					.item_descr_body
+	// 						h5
+	// 						ul
+	// 							li
+	// 					.item_descr_footer
+	// 						button
+
+	// 		&.half
+	// 			padding: 0
+	// 			&:first-child
+	// 				padding-right: $margin/2
+	// 			.banner
+	// 				.banner_wrapper.media
+	// 					button
+
+	// 					.media-left, .media-right
+	// 						.png_wrapper.media-object
+	// 							&.orange
+	// 							+orange
+	// 							&.dark
+	// 								+dark
+	// 					.content_wrapper
+	// 						.item_descr_body
+	// 		&.part
+	// 			padding: 0
+	// 			&:first-child
+	// 				padding-right: $margin/2
+	// 			.banner
+	// 				.banner_wrapper.media
+	// 					.media-left
+	// 						.png_wrapper.media-object
+	// 							&.white
+	// 							+white
+	// 							&.dark
+	// 								+dark
+	// 					.content_wrapper
+	// 						.item_descr_body
+	// 						h5
+	// 						p
+	// 		&.vertical
+	// 			padding: 0
+	// 			margin: 0
+	// 			padding-right: $margin/2
+	// 			&:last-child
+	// 				padding-right: 0
+	// 			.banner
+	// 				.banner_wrapper
+	// 					.png_wrapper
+	// 						height: 16em
+	// 						&.white
+	// 							+white
+	// 						&.orange
+	// 							+orange
+	// 					.content_wrapper
+	
+	section.svg_banners
 		.banner_container
 			margin-bottom: $margin
 			.banner
@@ -511,70 +699,147 @@ body
 				.banner_wrapper.media
 					padding: $margin/2
 					.media-left, .media-right
-						.png_wrapper.media-object
-							width: 16em
-							height: 16em
-							&.white
-								+white
-							&.orange
-								+orange
+						.svg_wrapper.media-object
+							svg
+								width: 16em
+								height: 15.7em
 					.content_wrapper
 						display: table-cell
 						// vertical-align: middle
+						padding-left: $margin
+						padding-right: $margin
 						.item_descr_body
 							h5
+								font-weight: 600
+								font-size: 2.4em
+								margin-bottom: $margin/2
+								margin-top: $margin/2
 							ul
+								margin-bottom: $margin
 								li
+									margin-bottom: $margin/3
 						.item_descr_footer
 							button
-
+								float: left
+							ul
+								li
+									line-height: 2.3em
+									font-weight: 700
+									&:last-child
+										color: $main_color
 			&.half
 				padding: 0
+				button
+					margin: 0
+					margin-top: $margin
 				&:first-child
 					padding-right: $margin/2
 				.banner
 					.banner_wrapper.media
-						button
-
+						padding-right: $margin
+						padding-left: $margin
 						.media-left, .media-right
-							.png_wrapper.media-object
-								&.orange
-								+orange
-								&.dark
-									+dark
+							.svg_wrapper.media-object
+								svg
+									width: 12em
+									height: 15em
 						.content_wrapper
+							padding-right: $margin/2
+							padding-left: $margin/2
 							.item_descr_body
+								h5
+									font-size: 2.27em
+									padding: .5em 0
+							.item_descr_footer
+								ul
+									margin-bottom: 0
 			&.part
 				padding: 0
-				&:first-child
-					padding-right: $margin/2
-				.banner
-					.banner_wrapper.media
-						.media-left
-							.png_wrapper.media-object
-								&.white
-								+white
-								&.dark
-									+dark
-						.content_wrapper
-							.item_descr_body
+				padding-right: $margin/2
+				color: #fff
+			.banner
+				.banner_wrapper.media
+					padding-right: $margin
+					padding-left: $margin
+					.media-left
+						.svg_wrapper.media-object
+							svg
+								width: 5.44em
+								height: 10.6em
+					.content_wrapper
+						padding: 0
+						padding-left: $margin
+						// padding-right: $margin
+						.item_descr_body
 							h5
+								font-size: 2.27em
+								margin-bottom: $margin/2
+				&.grey
+					color: #666
+					padding: 0
+					.content_wrapper
+						.item_descr_body
+							h5
+								font-size: 2em
 							p
+								font-size: 1.1em
 			&.vertical
 				padding: 0
 				margin: 0
 				padding-right: $margin/2
+				&:nth-child(odd)
+					color: #fff
+				&:nth-child(1), &:nth-child(2)
+					text-align: center
 				&:last-child
 					padding-right: 0
 				.banner
 					.banner_wrapper
-						.png_wrapper
-							height: 16em
-							&.white
-								+white
-							&.orange
-								+orange
+						padding-top: $margin
+						padding-bottom: $margin/2
+						padding-right: $margin/2
+						padding-left: $margin/2
+						.svg_wrapper
+							// height: 16em
+							text-align: center
+							svg
+								height: 10em
+								width: 6.5em
+								margin: 0 auto
 						.content_wrapper
+							.item_descr_head
+								ul
+									li
+										&:nth-child(1)
+											font-weight: 700
+											margin-right: 1em
+											font-size: .9em
+										&:nth-child(2)
+											font-weight: 400
+											font-size: 1em
+											line-height: 1.2em
+											background-color: #e6e6e6
+											padding: .3em .5em
+							.item_descr_body
+								h5
+									font-weight: 600
+									font-size: 1.67em
+									margin-bottom: $margin/2
+									margin-top: $margin/2
+								p
+									margin-bottom: $margin
+							.item_descr_footer
+								button
+									// width: 95%
+									// padding: 0
+									text-align: center
+									margin-bottom: $margin
+								ul
+									li
+										// line-height: 2.3em
+										font-weight: 700
+										&:last-child
+											color: $main_color
 
 	footer
 		margin-top: 4em

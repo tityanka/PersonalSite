@@ -1,8 +1,3 @@
-.row {
-  border-left: 1px solid;
-  border-right: 1px solid;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -114,12 +109,6 @@ button.empty:hover {
   background-image: url("../img/rocket-004.jpg");
   background-size: cover;
   background-position: top center;
-}
-
-.png_wrapper {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .media-left,
@@ -448,6 +437,47 @@ body section.img_banners .banner_container .banner .banner_wrapper.media .media-
 
 body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
   display: table-cell;
+  vertical-align: middle;
+  padding: 24px 48px;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_head ul li:nth-child(1) {
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_head ul li:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  background-color: #e6e6e6;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+  font-weight: 600;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body ul {
+  margin-bottom: 48px;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body ul li {
+  margin-bottom: 16px;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer button {
+  float: left;
+  text-align: center;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer ul li {
+  line-height: 2.3em;
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer ul li:last-child {
+  color: #f7931e;
 }
 
 body section.img_banners .banner_container.half {
@@ -463,8 +493,21 @@ body section.img_banners .banner_container.half:first-child {
   padding-right: 24px;
 }
 
+body section.img_banners .banner_container.half:first-child .banner .content_wrapper {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+body section.img_banners .banner_container.half:first-child .banner .content_wrapper .item_descr_body h5 {
+  font-size: 1.6em;
+}
+
+body section.img_banners .banner_container.half:first-child .banner .content_wrapper .item_descr_footer ul {
+  margin-bottom: 0;
+}
+
 body section.img_banners .banner_container.half:nth-child(2) .banner .img_wrapper {
-  height: 16em;
+  height: 21em;
   background-position: top;
 }
 
@@ -476,24 +519,89 @@ body section.img_banners .banner_container.half:nth-child(2) .banner .content_wr
   position: absolute;
   bottom: 0;
   left: 0;
+  color: #fff;
+  padding-right: 24px;
+  padding-left: 48px;
+}
+
+body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_head ul li:nth-child(1) {
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_head ul li:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  background-color: #e6e6e6;
+  color: #131313;
+}
+
+body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_footer ul li {
+  line-height: 2.3em;
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_footer ul li:last-child {
+  color: #f7931e;
 }
 
 body section.img_banners .banner_container.half .banner_wrapper.media .media-left .img_wrapper.media-object {
-  width: 12em;
-  height: 16em;
+  width: 16em;
+  height: 21em;
 }
 
 body section.img_banners .banner_container.part {
   padding: 0;
 }
 
+body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper {
+  padding: 0 24px;
+}
+
+body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper h5 {
+  font-size: 1.37em;
+  margin-bottom: 24px;
+}
+
+body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper p {
+  font-size: .82em;
+}
+
 body section.img_banners .banner_container.part:first-child {
   padding-right: 24px;
 }
 
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper {
+  padding-bottom: 0;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body h5 {
+  margin-bottom: 0;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul {
+  margin-bottom: 0;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul li {
+  font-size: .66em;
+  margin-bottom: 0;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul li:nth-child(1) {
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul li:nth-child(2) {
+  font-weight: 400;
+  font-size: .73em;
+  line-height: 1.2em;
+  background-color: #e6e6e6;
+}
+
 body section.img_banners .banner_container.part .banner_wrapper.media .media-left .img_wrapper.media-object {
   width: 12em;
-  height: 11em;
+  height: 12em;
 }
 
 body section.img_banners .banner_container.vertical {
@@ -510,90 +618,218 @@ body section.img_banners .banner_container.vertical .banner .banner_wrapper .img
   height: 16em;
 }
 
-body section.png_banners .banner_container {
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper {
+  padding: 9.6px;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_head ul li:nth-child(1) {
+  font-weight: 700;
+  margin-right: 1em;
+  font-size: .9em;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_head ul li:nth-child(2) {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  background-color: #e6e6e6;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body h5 {
+  font-weight: 600;
+  font-size: 1.67em;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body p {
   margin-bottom: 48px;
 }
 
-body section.png_banners .banner_container .banner {
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer {
+  text-align: center;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer button {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer ul li {
+  font-weight: 700;
+}
+
+body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer ul li:last-child {
+  color: #f7931e;
+}
+
+body section.svg_banners .banner_container {
+  margin-bottom: 48px;
+}
+
+body section.svg_banners .banner_container .banner {
   border: 1px solid #b3b3b3;
   position: relative;
 }
 
-body section.png_banners .banner_container .banner .banner_wrapper.media {
+body section.svg_banners .banner_container .banner .banner_wrapper.media {
   padding: 24px;
 }
 
-body section.png_banners .banner_container .banner .banner_wrapper.media .media-left .png_wrapper.media-object,
-body section.png_banners .banner_container .banner .banner_wrapper.media .media-right .png_wrapper.media-object {
+body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg,
+body section.svg_banners .banner_container .banner .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
   width: 16em;
-  height: 16em;
+  height: 15.7em;
 }
 
-body section.png_banners .banner_container .banner .banner_wrapper.media .media-left .png_wrapper.media-object.white {
-  background-image: url("../img/logo_w.png");
-}
-
-body section.png_banners .banner_container .banner .banner_wrapper.media .media-left .png_wrapper.media-object.orange {
-  background-image: url("../img/logo_o.png");
-}
-
-body section.png_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
   display: table-cell;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
-body section.png_banners .banner_container.half {
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+  font-weight: 600;
+  font-size: 2.4em;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body ul {
+  margin-bottom: 48px;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body ul li {
+  margin-bottom: 16px;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer button {
+  float: left;
+}
+
+body section.svg_banners .banner_container.half {
   padding: 0;
 }
 
-body section.png_banners .banner_container.half:first-child {
+body section.svg_banners .banner_container.half button {
+  margin: 0;
+  margin-top: 48px;
+}
+
+body section.svg_banners .banner_container.half:first-child {
   padding-right: 24px;
 }
 
-body section.png_banners .banner_container.half .banner .banner_wrapper.media .media-left .png_wrapper.media-object,
-body section.png_banners .banner_container.half .banner .banner_wrapper.media .media-right .png_wrapper.media-object {
-  background-image: url("../img/logo_o.png");
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media {
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
-body section.png_banners .banner_container.half .banner .banner_wrapper.media .media-right .png_wrapper.media-object.dark {
-  background-image: url("../img/logo_g.png");
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg,
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
+  width: 12em;
+  height: 15em;
 }
 
-body section.png_banners .banner_container.part {
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+  font-size: 2.27em;
+  padding: .5em 0;
+}
+
+body section.svg_banners .banner_container.part {
+  padding: 0;
+  padding-right: 24px;
+  color: #fff;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
+  width: 5.44em;
+  height: 10.6em;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+  padding: 0;
+  padding-left: 48px;
+}
+
+body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+  font-size: 2.27em;
+  margin-bottom: 24px;
+}
+
+body section.svg_banners .banner_container .banner.grey {
+  color: #666;
   padding: 0;
 }
 
-body section.png_banners .banner_container.part:first-child {
-  padding-right: 24px;
+body section.svg_banners .banner_container .banner.grey .content_wrapper .item_descr_body h5 {
+  font-size: 2em;
 }
 
-body section.png_banners .banner_container.part .banner .banner_wrapper.media .media-left .png_wrapper.media-object {
-  background-image: url("../img/logo_w.png");
+body section.svg_banners .banner_container .banner.grey .content_wrapper .item_descr_body p {
+  font-size: 1.1em;
 }
 
-body section.png_banners .banner_container.part .banner .banner_wrapper.media .media-left .png_wrapper.media-object.dark {
-  background-image: url("../img/logo_g.png");
-}
-
-body section.png_banners .banner_container.vertical {
+body section.svg_banners .banner_container.vertical {
   padding: 0;
   margin: 0;
   padding-right: 24px;
 }
 
-body section.png_banners .banner_container.vertical:last-child {
+body section.svg_banners .banner_container.vertical:nth-child(odd) {
+  color: #fff;
+}
+
+body section.svg_banners .banner_container.vertical:nth-child(1),
+body section.svg_banners .banner_container.vertical:nth-child(2) {
+  text-align: center;
+}
+
+body section.svg_banners .banner_container.vertical:last-child {
   padding-right: 0;
 }
 
-body section.png_banners .banner_container.vertical .banner .banner_wrapper .png_wrapper {
-  height: 16em;
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
-body section.png_banners .banner_container.vertical .banner .banner_wrapper .png_wrapper.white {
-  background-image: url("../img/logo_w.png");
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper .svg_wrapper {
+  text-align: center;
 }
 
-body section.png_banners .banner_container.vertical .banner .banner_wrapper .png_wrapper.orange {
-  background-image: url("../img/logo_o.png");
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper .svg_wrapper svg {
+  height: 10em;
+  width: 6.5em;
+  margin: 0 auto;
+}
+
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body h5 {
+  font-weight: 600;
+  font-size: 1.67em;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body p {
+  margin-bottom: 48px;
+}
+
+body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer button {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 body footer {
