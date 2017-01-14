@@ -5,7 +5,79 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width:992px)
+// @media only screen and (max-width:992px)
+@media only screen and (max-width:1024px)
+	body
+		font-size: 12px
+
+	=kerning($ls)
+		letter-spacing: $ls+px
+	$main_color: #f7931e
+	$font_color: #131313
+	$margin: 48px
+	h1
+		font-size: 5.8em
+		// font-size: 36px
+		+kerning(-3.5)
+		font-weight: 700
+	h2
+		// font-size: 3.47em
+		font-size: 30px
+		+kerning(-2)
+		font-weight: 700
+
+	h3
+		// font-size: 3em
+		font-size: 24px
+		+kerning(-1)
+	h4
+		// font-size: 2.6em
+		font-size: 18px
+		+kerning(-1.5)
+
+	h5
+		// font-size: 1.87em
+		font-size: 14px
+	
+
+	body
+		header
+			.logo-container
+				padding: 0
+			.tagline
+				h3
+					+kerning(-1)
+		section.s_slider
+			min-height: 330px
+			padding-top: $margin*2
+			.logo-container
+
+		section.s_content
+			margin-top: $margin/2
+			.container
+				.zero_row
+					.left_col
+						h1
+							// font-size: 200%
+							margin-bottom: $margin/2
+				.first_row
+					.left_content
+						h2
+							margin-top: $margin/2
+						ul
+							margin-top: $margin/2
+							margin-bottom: $margin/2
+				.second_row
+					margin-top: $margin/2
+					margin-bottom: $margin/2
+					ul
+						padding-left: 0
+						margin-left: $margin/2
+					ol
+						padding-left: 0
+						padding-right: 0
+						margin-left: $margin/2
+
 
 
 /* Small Devices, Tablets */
@@ -17,6 +89,7 @@
 		letter-spacing: $ls+px
 	$main_color: #f7931e
 	$font_color: #131313
+	$margin: 48px
 	h1
 		// font-size: 5.8em
 		font-size: 36px
@@ -48,28 +121,22 @@
 		margin-right: 0
 	.media
 		overflow: visible
-	.media-body
-		max-width: 85vw
-		padding: 0.5em!important
+
 	.media-left, .media-right, .media-body
 		display: block
 	img
 		max-width: 100vw
-	*
-		padding: 0
-		margin: 0
 	button
 		float: none
-	body section.s_banner_svg .news_item.half .media .grey
-		margin-top: 6em
-
+	
 	body
 		header
+			padding-top: $margin/2
 			.logo-container
 				padding: 0
 			.tagline
 				h3
-					// +kerning(-1)
+					+kerning(0)
 			.main_mnu
 				nav.navbar.navbar-default
 					#main_mnu.collapse.navbar-collapse
@@ -88,17 +155,30 @@
 			h1
 				// +kerning(-3.5)	
 		section.s_content
+			margin-top: $margin/2
 			.container
-				padding: .3em
-				.first_row
-					margin: 0
-					padding: 0
+				.zero_row
 					.left_col
 						h1
-							// +kerning(-3)
+							margin-bottom: $margin/2
+				.first_row
+					.left_content
+						h2
+							margin-top: $margin/2
+						ul
+							margin-top: $margin/2
+							margin-bottom: $margin/2
 				.second_row
+					margin-top: $margin/2
+					margin-bottom: $margin/2
+					ul
+						padding-left: 0
+						margin-left: $margin/2
 					ol
-						padding-left: 3.2em
+						padding-left: 0
+						padding-right: 0
+						margin-left: $margin/2
+
 		section.s_banners
 			.news_item
 				margin: .5em
