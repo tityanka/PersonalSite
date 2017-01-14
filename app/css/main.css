@@ -676,14 +676,14 @@ body section.svg_banners .banner_container .banner .banner_wrapper.media {
   padding: 24px;
 }
 
-body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg,
-body section.svg_banners .banner_container .banner .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
+body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
   width: 16em;
   height: 15.7em;
 }
 
 body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
   display: table-cell;
+  vertical-align: middle;
   padding-left: 48px;
   padding-right: 48px;
 }
@@ -725,20 +725,32 @@ body section.svg_banners .banner_container.half .banner .banner_wrapper.media {
   padding-left: 48px;
 }
 
-body section.svg_banners .banner_container.half .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg,
-body section.svg_banners .banner_container.half .banner .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
-  width: 12em;
+body section.svg_banners .banner_container.half .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
+  width: 8em;
   height: 15em;
 }
 
 body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper {
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 0;
+  padding-left: 48px;
 }
 
 body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
   font-size: 2.27em;
-  padding: .5em 0;
+}
+
+body section.svg_banners .banner_container.half .banner.grey {
+  color: #4d4d4d;
+}
+
+body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
+  width: 8em;
+  height: 15em;
+}
+
+body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .content_wrapper {
+  padding-left: 0;
+  padding-right: 48px;
 }
 
 body section.svg_banners .banner_container.part {
@@ -747,37 +759,43 @@ body section.svg_banners .banner_container.part {
   color: #fff;
 }
 
-body section.svg_banners .banner_container .banner .banner_wrapper.media {
-  padding-right: 48px;
-  padding-left: 48px;
+body section.svg_banners .banner_container.part:last-child {
+  padding-right: 0;
 }
 
-body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
+body section.svg_banners .banner_container.part .banner .banner_wrapper.media {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+body section.svg_banners .banner_container.part .banner .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
   width: 5.44em;
   height: 10.6em;
 }
 
-body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+body section.svg_banners .banner_container.part .banner .banner_wrapper.media .content_wrapper {
   padding: 0;
   padding-left: 48px;
 }
 
-body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+body section.svg_banners .banner_container.part .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
   font-size: 2.27em;
   margin-bottom: 24px;
 }
 
-body section.svg_banners .banner_container .banner.grey {
+body section.svg_banners .banner_container.part .banner.grey.pad {
   color: #666;
   padding: 0;
 }
 
-body section.svg_banners .banner_container .banner.grey .content_wrapper .item_descr_body h5 {
+body section.svg_banners .banner_container.part .banner.grey.pad .content_wrapper .item_descr_body h5 {
   font-size: 2em;
+  margin-bottom: 24px;
 }
 
-body section.svg_banners .banner_container .banner.grey .content_wrapper .item_descr_body p {
+body section.svg_banners .banner_container.part .banner.grey.pad .content_wrapper .item_descr_body p {
   font-size: 1.1em;
+  margin-bottom: 0;
 }
 
 body section.svg_banners .banner_container.vertical {
@@ -824,12 +842,14 @@ body section.svg_banners .banner_container.vertical .banner .banner_wrapper .con
 }
 
 body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body p {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer button {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 body footer {

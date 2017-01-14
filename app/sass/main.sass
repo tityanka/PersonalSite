@@ -698,14 +698,14 @@ body
 				position: relative
 				.banner_wrapper.media
 					padding: $margin/2
-					.media-left, .media-right
+					.media-left
 						.svg_wrapper.media-object
 							svg
 								width: 16em
 								height: 15.7em
 					.content_wrapper
 						display: table-cell
-						// vertical-align: middle
+						vertical-align: middle
 						padding-left: $margin
 						padding-right: $margin
 						.item_descr_body
@@ -738,51 +738,64 @@ body
 					.banner_wrapper.media
 						padding-right: $margin
 						padding-left: $margin
-						.media-left, .media-right
+						.media-left
 							.svg_wrapper.media-object
 								svg
-									width: 12em
+									width: 8em
 									height: 15em
 						.content_wrapper
-							padding-right: $margin/2
-							padding-left: $margin/2
+							padding-right: 0
+							padding-left: $margin
 							.item_descr_body
 								h5
 									font-size: 2.27em
-									padding: .5em 0
 							.item_descr_footer
 								ul
 									margin-bottom: 0
+					&.grey
+						color: #4d4d4d
+						.banner_wrapper.media
+							.media-right
+								.svg_wrapper.media-object
+									svg
+										width: 8em
+										height: 15em
+							.content_wrapper
+								padding-left: 0
+								padding-right: $margin
 			&.part
 				padding: 0
 				padding-right: $margin/2
 				color: #fff
-			.banner
-				.banner_wrapper.media
-					padding-right: $margin
-					padding-left: $margin
-					.media-left
-						.svg_wrapper.media-object
-							svg
-								width: 5.44em
-								height: 10.6em
-					.content_wrapper
+				&:last-child
+					padding-right: 0
+				.banner
+					.banner_wrapper.media
+						padding-right: $margin/2
+						padding-left: $margin/2
+						.media-left
+							.svg_wrapper.media-object
+								svg
+									width: 5.44em
+									height: 10.6em
+						.content_wrapper
+							padding: 0
+							padding-left: $margin
+							.item_descr_body
+								h5
+									font-size: 2.27em
+									margin-bottom: $margin/2
+					&.grey.pad
+						color: #666
 						padding: 0
-						padding-left: $margin
-						// padding-right: $margin
-						.item_descr_body
-							h5
-								font-size: 2.27em
-								margin-bottom: $margin/2
-				&.grey
-					color: #666
-					padding: 0
-					.content_wrapper
-						.item_descr_body
-							h5
-								font-size: 2em
-							p
-								font-size: 1.1em
+						.content_wrapper
+							.item_descr_body
+								h5
+									font-size: 2em
+									margin-bottom: $margin/2
+								p
+									font-size: 1.1em
+									margin-bottom: 0
 			&.vertical
 				padding: 0
 				margin: 0
@@ -800,7 +813,6 @@ body
 						padding-right: $margin/2
 						padding-left: $margin/2
 						.svg_wrapper
-							// height: 16em
 							text-align: center
 							svg
 								height: 10em
@@ -827,16 +839,16 @@ body
 									margin-bottom: $margin/2
 									margin-top: $margin/2
 								p
-									margin-bottom: $margin
+									margin-bottom: $margin/2
+									margin-top: $margin/2
 							.item_descr_footer
 								button
-									// width: 95%
-									// padding: 0
 									text-align: center
-									margin-bottom: $margin
+									margin-bottom: $margin/2
+									margin-top: $margin/2
+
 								ul
 									li
-										// line-height: 2.3em
 										font-weight: 700
 										&:last-child
 											color: $main_color
