@@ -112,7 +112,6 @@ button.empty:hover {
 }
 
 .media-left,
-.media-right,
 .media-middle {
   padding: 0;
 }
@@ -433,7 +432,7 @@ body section.img_banners .banner_container .banner {
 
 body section.img_banners .banner_container .banner .banner_wrapper.media .media-left .img_wrapper.media-object {
   width: 24em;
-  height: 23em;
+  height: 24em;
   background-position: center;
 }
 
@@ -473,6 +472,11 @@ body section.img_banners .banner_container .banner .banner_wrapper.media .conten
   text-align: center;
 }
 
+body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer ul {
+  text-align: right;
+  line-height: 4em;
+}
+
 body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer ul li {
   line-height: 2.3em;
   font-weight: 700;
@@ -487,7 +491,6 @@ body section.img_banners .banner_container.half {
 }
 
 body section.img_banners .banner_container.half button {
-  margin: 0;
   margin-top: 48px;
 }
 
@@ -495,9 +498,14 @@ body section.img_banners .banner_container.half:first-child {
   padding-right: 24px;
 }
 
+body section.img_banners .banner_container.half:first-child button {
+  float: right;
+}
+
 body section.img_banners .banner_container.half:first-child .banner .content_wrapper {
   padding-right: 24px;
   padding-left: 24px;
+  padding-bottom: 0;
 }
 
 body section.img_banners .banner_container.half:first-child .banner .content_wrapper .item_descr_body h5 {
@@ -537,6 +545,10 @@ body section.img_banners .banner_container.half:nth-child(2) .banner .content_wr
   line-height: 1.2em;
   background-color: #e6e6e6;
   color: #131313;
+}
+
+body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_body h5 {
+  font-size: 1.86em;
 }
 
 body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_footer ul li {
@@ -600,6 +612,11 @@ body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wra
   font-size: .73em;
   line-height: 1.2em;
   background-color: #e6e6e6;
+}
+
+body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_footer ul {
+  margin-bottom: 0;
+  line-height: 1em;
 }
 
 body section.img_banners .banner_container.part .banner_wrapper.media .media-left .img_wrapper.media-object {
@@ -723,6 +740,10 @@ body section.svg_banners .banner_container.half:first-child {
   padding-right: 24px;
 }
 
+body section.svg_banners .banner_container.half:first-child button {
+  float: right;
+}
+
 body section.svg_banners .banner_container.half .banner .banner_wrapper.media {
   padding-right: 48px;
   padding-left: 48px;
@@ -746,7 +767,11 @@ body section.svg_banners .banner_container.half .banner.grey {
   color: #4d4d4d;
 }
 
-body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .media-right .svg_wrapper.media-object svg {
+body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .media-left {
+  float: right;
+}
+
+body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .media-left .svg_wrapper.media-object svg {
   width: 8em;
   height: 15em;
 }
@@ -821,10 +846,8 @@ body section.svg_banners .banner_container.vertical:last-child {
 }
 
 body section.svg_banners .banner_container.vertical .banner .banner_wrapper {
+  padding: 24px;
   padding-top: 48px;
-  padding-bottom: 24px;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 
 body section.svg_banners .banner_container.vertical .banner .banner_wrapper .svg_wrapper {
@@ -954,7 +977,7 @@ body footer .bottom_mnu ul li.active a:focus {
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 2.5em;
     letter-spacing: -2px;
     font-weight: 700;
   }
@@ -971,6 +994,10 @@ body footer .bottom_mnu ul li.active a:focus {
 
   h5 {
     font-size: 14px;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+    font-size: 1.37em;
   }
 
   body header .logo-container {
@@ -1018,6 +1045,10 @@ body footer .bottom_mnu ul li.active a:focus {
     padding-right: 0;
     margin-left: 24px;
   }
+
+  body footer .logo-container .logo_text h2 {
+    font-size: 30px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1050,12 +1081,13 @@ body footer .bottom_mnu ul li.active a:focus {
   }
 
   h5 {
-    font-size: 14px;
+    font-size: 1.87em;
   }
 
   .col-md-3,
   .col-md-4,
   .col-md-5,
+  .col-sm-6,
   .col-md-6,
   .col-md-7,
   .col-md-8,
@@ -1073,8 +1105,7 @@ body footer .bottom_mnu ul li.active a:focus {
     overflow: visible;
   }
 
-  .media-left,
-  .media-right {
+  .media-left {
     display: block;
   }
 
@@ -1084,6 +1115,18 @@ body footer .bottom_mnu ul li.active a:focus {
 
   button {
     float: none;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .media-left .img_wrapper.media-object {
+    width: 100%;
+  }
+
+  body section.svg_banners .banner_container .banner .banner_wrapper.media .media-left .svg_wrapper.media-object {
+    text-align: center;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+    display: block;
   }
 
   body header {
@@ -1140,9 +1183,258 @@ body footer .bottom_mnu ul li.active a:focus {
     padding-right: 0;
     margin-left: 24px;
   }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+    padding: 24px;
+    padding-bottom: 0;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body ul {
+    margin-bottom: 24px;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer {
+    text-align: center;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer button {
+    float: none;
+    margin: auto;
+  }
+
+  body section.img_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_footer ul {
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  body section.img_banners .banner_container.half {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  body section.img_banners .banner_container.half button {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    float: none !important;
+  }
+
+  body section.img_banners .banner_container.half:first-child {
+    padding-right: 0;
+  }
+
+  body section.img_banners .banner_container.half:first-child .banner {
+    text-align: left;
+  }
+
+  body section.img_banners .banner_container.half:first-child .banner .content_wrapper .item_descr_footer ul {
+    margin-top: 0;
+  }
+
+  body section.img_banners .banner_container.half:nth-child(2) .banner {
+    text-align: left;
+  }
+
+  body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  body section.img_banners .banner_container.half:nth-child(2) .banner .content_wrapper .item_descr_footer {
+    padding-top: 24px;
+  }
+
+  body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper {
+    padding-bottom: 12px;
+    padding-top: 24px;
+  }
+
+  body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper h5 {
+    font-size: 1.87em;
+    margin-bottom: 12px;
+  }
+
+  body section.img_banners .banner_container.part .banner .banner_wrapper .content_wrapper p {
+    font-size: 1em;
+  }
+
+  body section.img_banners .banner_container.part:first-child {
+    padding: 0;
+  }
+
+  body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul li {
+    font-size: 1em;
+  }
+
+  body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_body ul li:nth-child(2) {
+    font-size: 1.1em;
+  }
+
+  body section.img_banners .banner_container.part:nth-child(2) .banner .banner_wrapper .content_wrapper .item_descr_footer ul {
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 12px;
+  }
+
+  body section.img_banners .banner_container.vertical {
+    margin-bottom: 48px;
+    display: block;
+  }
+
+  body section.img_banners .banner_container.vertical:nth-child(odd) {
+    padding-right: 12px;
+    clear: both;
+  }
+
+  body section.img_banners .banner_container.vertical:nth-child(even) {
+    padding-right: 0;
+  }
+
+  body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_body p {
+    margin-bottom: 24px;
+  }
+
+  body section.img_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper .item_descr_footer button {
+    margin-bottom: 24px;
+  }
+
+  body section.svg_banners .banner_container .banner .banner_wrapper.media {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper {
+    padding: 0;
+  }
+
+  body section.svg_banners .banner_container .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+    font-size: 2em;
+  }
+
+  body section.svg_banners .banner_container.half {
+    text-align: center;
+  }
+
+  body section.svg_banners .banner_container.half button {
+    float: none !important;
+  }
+
+  body section.svg_banners .banner_container.half:first-child {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.half .banner {
+    text-align: left;
+  }
+
+  body section.svg_banners .banner_container.half .banner .banner_wrapper.media {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper {
+    padding: 0;
+  }
+
+  body section.svg_banners .banner_container.half .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+    font-size: 2em;
+  }
+
+  body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .media-left {
+    float: none;
+  }
+
+  body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .content_wrapper {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.half .banner.grey .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+    font-size: 2em;
+  }
+
+  body section.svg_banners .banner_container.part {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.part:first-child {
+    padding-right: 12px;
+  }
+
+  body section.svg_banners .banner_container.part:last-child {
+    padding-left: 12px;
+  }
+
+  body section.svg_banners .banner_container.part .banner .banner_wrapper.media {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body section.svg_banners .banner_container.part .banner .banner_wrapper.media .content_wrapper {
+    padding: 0;
+  }
+
+  body section.svg_banners .banner_container.part .banner .banner_wrapper.media .content_wrapper .item_descr_body h5 {
+    font-size: 2em;
+  }
+
+  body section.svg_banners .banner_container.vertical {
+    padding-right: 0;
+    margin-bottom: 48px;
+  }
+
+  body section.svg_banners .banner_container.vertical:nth-child(odd) {
+    padding-right: 12px;
+  }
+
+  body section.svg_banners .banner_container.vertical:nth-child(even) {
+    padding-left: 12px;
+  }
+
+  body section.svg_banners .banner_container.vertical .banner .banner_wrapper {
+    padding-bottom: 24px;
+  }
+
+  body section.svg_banners .banner_container.vertical .banner .banner_wrapper .content_wrapper {
+    padding: 0;
+  }
+
+  body footer .logo-container .logo_text h2 {
+    font-size: 30px;
+  }
 }
 
 /* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  body section.img_banners .banner_container.vertical:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.part:first-child {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.part:last-child {
+    padding-left: 0;
+  }
+
+  body section.svg_banners .banner_container.vertical:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  body section.svg_banners .banner_container.vertical:nth-child(even) {
+    padding-left: 0;
+  }
+}
 
 /* Custom, iPhone Retina */
 
